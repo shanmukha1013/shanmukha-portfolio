@@ -1,0 +1,670 @@
+﻿﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Marella Shanmukha Reddy - Data Analyst & ML Engineer. Computer Science Undergraduate Portfolio.">
+  <title>Shanmukha Reddy | Data Analyst & ML Engineer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-logo">SR<span>.</span></div>
+      <div class="loader-bar-container">
+        <div class="loader-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-outline" id="cursor-outline"></div>
+
+  <!-- Progress Bar -->
+  <div id="progress-container"><div id="progress-bar"></div></div>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo">Shanmukha<span>.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#journey" class="nav-link">Journey</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+        <div class="nav-actions">
+        <a href="./marellashanmukharedresume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-resume btn-primary btn-sm hidden-mobile" aria-label="View Resume">
+          <i class="fas fa-eye" aria-hidden="true"></i> View Resume
+        </a>
+        <a href="./marellashanmukharedresume.pdf" download="Marella_Shanmukha_Reddy_Resume.pdf" class="btn btn-resume btn-outline btn-sm hidden-mobile" aria-label="Download Resume">
+          <i class="fas fa-download" aria-hidden="true"></i> Download Resume
+        </a>
+        <div class="hamburger" id="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section" aria-label="Hero section">
+    <div class="hero-background">
+      <div class="glow-orb orb-1"></div>
+      <div class="glow-orb orb-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="container hero-container">
+      <div class="hero-content reveal">
+        <div class="hero-badge">
+          <span class="status-dot"></span> Open to opportunities
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm <br>
+          <span class="highlight">Marella Shanmukha Reddy</span>
+        </h1>
+        <h2 class="hero-subtitle">
+          I'm an Aspiring <span class="typed-text" id="typed"></span><span class="cursor">&nbsp;</span>
+        </h2>
+        <p class="hero-description">
+          A passionate Computer Science undergraduate blending Machine Learning, Data Analytics, and Full-Stack Development to build impactful, real-world solutions.
+        </p>
+          <div class="hero-cta">
+            <div class="hero-cta-links">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-rocket"></i> View My Work
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fas fa-envelope"></i> Let's Connect
+            </a>
+          </div>
+        </div>
+      <div class="hero-socials">
+          <a href="https://github.com/shanmukha1013" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://leetcode.com/u/marellashanmukhareddy/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode"><i class="fab fa-react"></i></a>
+          <a href="https://linkedin.com/in/shanmukha-reddy-marella" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:marellashanmukhareddy@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal reveal-delay-1">
+        <div class="image-wrapper glass-panel">
+          <img src="images/meai.png" alt="Marella Shanmukha Reddy" class="profile-img" loading="eager" fetchpriority="high">
+
+
+          <div class="floating-badge badge-1 glass-panel">
+            <i class="fab fa-python"></i> Python
+          </div>
+          <div class="floating-badge badge-2 glass-panel">
+            <i class="fas fa-brain"></i> ML
+          </div>
+          <div class="floating-badge badge-3 glass-panel">
+            <i class="fas fa-chart-pie"></i> Data
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <div class="arrow">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+        <div class="section-divider"></div>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-text glass-panel reveal">
+          <h3>Driven by Curiosity, Built with Code</h3>
+          <p>I am a Computer Science undergraduate at Sreyas Institute of Engineering and Technology, specializing in <strong>Machine Learning, Data Analytics, and Software Development</strong>. My journey is fueled by an entrepreneurial mindset and a desire to create products that solve real-world problems.</p>
+          <p>From developing AI-powered startup evaluation platforms to community-driven discussion spaces, I love turning complex ideas into functional, user-centric prototypes. I am a fast learner, constantly exploring new technologies in the data and AI ecosystem to build smarter, more efficient systems.</p>
+        </div>
+
+        <div class="about-right glass-panel reveal reveal-delay-1" id="from-ideas-to-products">
+          <h3 class="about-right-title">From Ideas to Products</h3>
+
+          <div class="story-rail" aria-label="From Ideas to Products storytelling">
+            <div class="story-steps">
+              <section class="story-block glass-panel" aria-label="Product Builder">
+                <div class="story-badge" aria-hidden="true">🚀</div>
+                <div class="story-content">
+                  <h4>Product Builder</h4>
+                  <p>I enjoy transforming ideas into real-world applications. From social platforms and online marketplaces to startup-focused tools, I learn by building products that solve meaningful problems.</p>
+                </div>
+              </section>
+
+              <section class="story-block glass-panel" aria-label="Startup Mindset">
+                <div class="story-badge" aria-hidden="true">💡</div>
+                <div class="story-content">
+                  <h4>Startup Mindset</h4>
+                  <p>My interest in entrepreneurship drives the way I approach development. I focus on real value—problem discovery, validation, and long-term impact.</p>
+                </div>
+              </section>
+
+              <section class="story-block glass-panel" aria-label="AI and Data Analytics">
+                <div class="story-badge" aria-hidden="true">🤖</div>
+                <div class="story-content">
+                  <h4>AI &amp; Data Analytics</h4>
+                  <p>I am actively developing expertise in Machine Learning, Data Analytics, Python, and SQL while exploring how intelligent systems can solve practical challenges.</p>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Technical <span class="highlight">Skills</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="skills-container">
+        <!-- Programming -->
+
+        <div class="coding-spotlight coding-spotlight-compact glass-panel reveal" aria-label="Competitive Programming and Data Structures and Algorithms">
+          <div class="coding-spotlight-inner">
+            <div class="coding-spotlight-icon" aria-hidden="true">
+              <!-- Official LeetCode SVG (kept intact; themed to portfolio accent) -->
+              <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                <path fill="currentColor" d="M256 16C132.5 16 32 116.5 32 240c0 105.9 78.2 193.7 179.9 207.3c4.8.7 9.1-3 9.1-7.8v-53.6c0-4.1 2.6-7.7 6.6-8.6c17.2-4.2 32.6-16.6 32.6-38.4c0-28.2-26.4-31.6-31.6-64c-3.1-19.1 5-39.4 25-49.6c2.8-1.4 5.7-2.1 8.6-2.3c-16-5.9-35.8-24.1-35.8-58.9c0-53 43.1-88.4 95.2-88.4c24.5 0 48.3 8.7 65.6 23.9c2.4 2.2 3 5.8 1.3 8.7l-14.2 24.4c-1.8 3.1-5.7 4.1-8.8 2.2c-10.2-6.5-22.7-10-35.6-10c-25.8 0-48.5 16.5-48.5 41.9c0 23.5 20.9 34.2 47.6 38.1c4 .6 7 4 7 8v22.7c0 4-2.7 7.5-6.6 8.4c-25.8 5.9-45.2 18.6-45.2 45.3c0 19 12.9 33 32.2 39.1c4 .1 6.8 3.8 6.8 7.9v63.8c0 4.7 4.2 8.4 9 7.9C432.1 432.5 480 343.9 480 240c0-123.5-100.5-224-224-224Z"/>
+                <path fill="currentColor" d="M230.3 372.7c-5.7 0-10.3-4.6-10.3-10.3v-31c0-5.7 4.6-10.3 10.3-10.3h51.4c5.7 0 10.3 4.6 10.3 10.3v31c0 5.7-4.6 10.3-10.3 10.3h-51.4Z" opacity="0.95"/>
+              </svg>
+            </div>
+            <div class="coding-spotlight-content">
+              <h3 class="coding-spotlight-title">Competitive Programming &amp; DSA</h3>
+              <div class="coding-spotlight-tags" role="list" aria-label="Competitive programming skills">
+                <span class="coding-spotlight-tag" role="listitem">LeetCode</span>
+                <span class="coding-spotlight-tag" role="listitem">Problem Solving</span>
+                <span class="coding-spotlight-tag" role="listitem">Data Structures</span>
+                <span class="coding-spotlight-tag" role="listitem">Algorithms</span>
+                <span class="coding-spotlight-tag" role="listitem">Python</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass-panel reveal">
+          <div class="skill-header">
+            <i class="fas fa-code"></i>
+            <h3>Programming</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+          </div>
+        </div>
+
+        <!-- Machine Learning -->
+        <div class="skill-category glass-panel reveal reveal-delay-1">
+          <div class="skill-header">
+            <i class="fas fa-robot"></i>
+            <h3>Machine Learning & AI</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">Scikit-learn</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Model Training</span>
+          </div>
+        </div>
+
+        <!-- Data Analysis -->
+        <div class="skill-category glass-panel reveal reveal-delay-2">
+          <div class="skill-header">
+            <i class="fas fa-chart-pie"></i>
+            <h3>Data Analysis</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Data Analysis</span>
+            <span class="skill-tag">Tableau</span>
+            <span class="skill-tag">Data Visualization</span>
+            <span class="skill-tag">Statistical Analysis</span>
+          </div>
+        </div>
+
+        <!-- Tools & DBs -->
+        <div class="skill-category glass-panel reveal reveal-delay-3">
+          <div class="skill-header">
+            <i class="fas fa-toolbox"></i>
+            <h3>Tools & Databases</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git & GitHub</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Jupyter Notebook</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- GitHub Stats -->
+      <div class="github-stats reveal">
+        <h3 class="subsection-title text-center">GitHub Contributions</h3>
+        <div class="stats-grid">
+          <div class="stat-img-wrapper glass-panel">
+            <img src="https://github-readme-stats.vercel.app/api?username=shanmukha1013&theme=radical&show_icons=true&hide_border=true&bg_color=00000000" alt="GitHub Stats" class="stat-img">
+          </div>
+          <div class="stat-img-wrapper glass-panel">
+            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shanmukha1013&theme=radical&layout=compact&hide_border=true&bg_color=00000000" alt="Top Languages" class="stat-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+        <div class="section-divider"></div>
+
+      </div>
+
+      <div class="projects-grid">
+        <!-- StartPunch -->
+        <div class="project-card glass-panel reveal" aria-label="StartPunch project">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-rocket"></i></div>
+            <div class="project-links" aria-hidden="true">
+              <a
+                href="https://github.com/shanmukha1013/StartPunch"
+                aria-label="StartPunch GitHub repository"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-quick-icon"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">StartPunch</h3>
+            <span class="project-badge">Priority Project</span>
+            <p class="project-desc">An AI-powered platform helping entrepreneurs validate and improve startup ideas by analyzing business concepts, growth potential, and viability before investing resources.</p>
+
+            <!-- Launch URL not provided; hidden per requirements -->
+            <div class="project-actions project-actions-hidden" aria-label="Project actions"></div>
+
+            <div class="project-tech">
+              <span>AI</span><span>Machine Learning</span><span>Python</span><span>Full-Stack</span>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- ForReal -->
+        <div class="project-card glass-panel reveal reveal-delay-1" aria-label="ForReal project">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-comments"></i></div>
+            <div class="project-links" aria-hidden="true">
+              <a
+                href="https://github.com/shanmukha1013/ForReal"
+                aria-label="ForReal GitHub repository"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-quick-icon project-quick-github"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">ForReal</h3>
+            <p class="project-desc">A community-focused social platform encouraging meaningful discussions and knowledge sharing. Users can create specialized rooms, debate, and exchange insights on common interests.</p>
+            <div class="project-actions" aria-label="Project actions">
+              <a class="project-btn project-btn-launch" href="https://for-real-seven.vercel.app" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-rocket"></i> 🚀 Launch Application
+              </a>
+            </div>
+            <div class="project-tech">
+              <span>Full-Stack</span><span>JavaScript</span><span>Web Sockets</span>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Flexy -->
+        <div class="project-card glass-panel reveal" aria-label="Flexy project">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-store"></i></div>
+            <div class="project-links" aria-hidden="true">
+              <a
+                href="https://github.com/shanmukha1013/Flexy-"
+                aria-label="Flexy GitHub repository"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-quick-icon project-quick-github"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Flexy</h3>
+            <p class="project-desc">An online marketplace enabling users to buy, sell, and bid on products. Features include advanced product listings, real-time auction bidding, user authentication, and profile management.</p>
+
+            <!-- Launch URL not provided; hidden per requirements -->
+            <div class="project-actions project-actions-hidden" aria-label="Project actions"></div>
+
+            <div class="project-tech">
+              <span>Web Technologies</span><span>MongoDB</span><span>Full-Stack</span>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Zobnext -->
+        <div class="project-card glass-panel reveal reveal-delay-1" aria-label="Zobnext project">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-briefcase"></i></div>
+            <div class="project-links" aria-hidden="true">
+              <a
+                href="https://github.com/shanmukha1013/zobnext"
+                aria-label="Zobnext GitHub repository"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-quick-icon project-quick-github"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Zobnext</h3>
+            <p class="project-desc">A dedicated part-time job marketplace connecting available workers with businesses. Simplifies the process of job posting, targeted worker discovery, and application tracking.</p>
+
+            <!-- Launch URL not provided; hidden per requirements -->
+            <div class="project-actions project-actions-hidden" aria-label="Project actions"></div>
+
+            <div class="project-tech">
+              <span>Python</span><span>Databases</span><span>Full-Stack</span>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Journey / Timeline Section -->
+  <section id="journey" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">My <span class="highlight">Journey</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-panel">
+            <span class="timeline-date">2023 - 2027 (Expected)</span>
+            <h3 class="timeline-title">B.Tech in Computer Science Engineering</h3>
+            <h4 class="timeline-subtitle">Sreyas Institute of Engineering and Technology</h4>
+            <p>Pursuing undergraduate studies with a current CGPA of 6.7/10. Focusing heavily on foundational computer science, machine learning, and data analytics.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-panel">
+            <span class="timeline-date">Intermediate</span>
+            <h3 class="timeline-title">Higher Secondary Education</h3>
+            <h4 class="timeline-subtitle">Sri Chaitanya Junior Kalashala</h4>
+            <p>Completed intermediate education with an academic performance of 80%, building strong fundamentals in mathematics and sciences.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-panel">
+            <span class="timeline-date">Secondary School</span>
+            <h3 class="timeline-title">Secondary School Certificate (SSC)</h3>
+            <h4 class="timeline-subtitle">Pragathi High School</h4>
+            <p>Graduated with a perfect CGPA of 10/10, demonstrating consistent academic excellence and dedication to learning.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coding Profiles Section -->
+  <section id="coding-profiles" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Coding <span class="highlight">Profiles</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="coding-profiles-grid">
+        <div class="coding-profile-card glass-panel reveal" aria-label="GitHub profile">
+          <div class="coding-profile-icon" aria-hidden="true"><i class="fab fa-github"></i></div>
+
+          <div class="coding-profile-content">
+            <h3 class="coding-profile-title">GitHub</h3>
+            <p class="coding-profile-text">Project Development</p>
+            <div class="coding-profile-divider" aria-hidden="true"></div>
+            <div class="coding-profile-milestones" aria-hidden="true">
+              <span>43+ Commits</span>
+              <span>Portfolio Projects</span>
+              <span>Open Source Learning</span>
+            </div>
+          </div>
+          <a class="coding-profile-link" href="https://github.com/shanmukha1013" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile">
+            <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="coding-profile-card glass-panel reveal reveal-delay-1" aria-label="LinkedIn profile">
+          <div class="coding-profile-icon" aria-hidden="true"><i class="fab fa-linkedin-in"></i></div>
+          <div class="coding-profile-content">
+            <h3 class="coding-profile-title">LinkedIn</h3>
+            <p class="coding-profile-text">Professional Networking</p>
+            <div class="coding-profile-divider" aria-hidden="true"></div>
+            <div class="coding-profile-milestones" aria-hidden="true">
+              <span>Career Growth</span>
+              <span>Industry Connections</span>
+            </div>
+          </div>
+          <a class="coding-profile-link" href="https://linkedin.com/in/shanmukha-reddy-marella" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile">
+            <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="coding-profile-card coding-profile-card-leetcode glass-panel reveal reveal-delay-2" aria-label="LeetCode profile">
+          <div class="coding-profile-icon" aria-hidden="true">
+<svg class="coding-profile-leetcode-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+              <path fill="currentColor" d="M256 16C132.5 16 32 116.5 32 240c0 105.9 78.2 193.7 179.9 207.3c4.8.7 9.1-3 9.1-7.8v-53.6c0-4.1 2.6-7.7 6.6-8.6c17.2-4.2 32.6-16.6 32.6-38.4c0-28.2-26.4-31.6-31.6-64c-3.1-19.1 5-39.4 25-49.6c2.8-1.4 5.7-2.1 8.6-2.3c-16-5.9-35.8-24.1-35.8-58.9c0-53 43.1-88.4 95.2-88.4c24.5 0 48.3 8.7 65.6 23.9c2.4 2.2 3 5.8 1.3 8.7l-14.2 24.4c-1.8 3.1-5.7 4.1-8.8 2.2c-10.2-6.5-22.7-10-35.6-10c-25.8 0-48.5 16.5-48.5 41.9c0 23.5 20.9 34.2 47.6 38.1c4 .6 7 4 7 8v22.7c0 4-2.7 7.5-6.6 8.4c-25.8 5.9-45.2 18.6-45.2 45.3c0 19 12.9 33 32.2 39.1c4 .1 6.8 3.8 6.8 7.9v63.8c0 4.7 4.2 8.4 9 7.9C432.1 432.5 480 343.9 480 240c0-123.5-100.5-224-224-224Z"/>
+              <path fill="currentColor" d="M230.3 372.7c-5.7 0-10.3-4.6-10.3-10.3v-31c0-5.7 4.6-10.3 10.3-10.3h51.4c5.7 0 10.3 4.6 10.3 10.3v31c0 5.7-4.6 10.3-10.3 10.3h-51.4Z" opacity="0.95"/>
+            </svg>
+          </div>
+          <div class="coding-profile-content">
+            <h3 class="coding-profile-title">LeetCode</h3>
+            <p class="coding-profile-text">Data Structures &amp; Algorithms</p>
+            <div class="coding-profile-divider" aria-hidden="true"></div>
+            <p class="coding-profile-text">Status: <span class="coding-profile-emphasis">Actively Learning and Practicing</span></p>
+            <p class="coding-profile-text" style="margin-top: 0.65rem; font-family: var(--font-mono); color: rgba(163,163,163,0.95);">Profile: leetcode.com/u/marellashmareddy</p>
+          </div>
+          <a class="coding-profile-link" href="https://leetcode.com/u/marellashanmukhareddy/" target="_blank" rel="noopener noreferrer" aria-label="Open LeetCode profile">
+            <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Let's <span class="highlight">Connect</span></h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">I'm always open to discussing internships, Machine Learning opportunities, Data Analytics roles, projects, collaborations, and innovative ideas.</p>
+
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-info glass-panel reveal">
+          <h3>Let's Connect</h3>
+          <p>I'm always open to discussing internships, Machine Learning opportunities, Data Analytics roles, projects, collaborations, and innovative ideas.</p>
+
+          <div class="quick-social" role="group" aria-label="Social links">
+            <a
+              class="btn btn-outline btn-social"
+              href="https://github.com/shanmukha1013"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open GitHub in a new tab"
+            >
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a
+              class="btn btn-outline btn-social"
+              href="https://leetcode.com/u/marellashanmukhareddy/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open LeetCode in a new tab"
+            >
+              <i class="fab fa-react"></i> LeetCode
+            </a>
+            <a
+              class="btn btn-outline btn-social"
+              href="https://linkedin.com/in/shanmukha-reddy-marella"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open LinkedIn in a new tab"
+            >
+              <i class="fab fa-linkedin-in"></i> LinkedIn
+            </a>
+          </div>
+
+          <div class="contact-details">
+            <a href="mailto:marellashanmukhareddy@gmail.com" class="contact-item">
+              <div class="icon-box"><i class="fas fa-envelope"></i></div>
+              <div class="item-text">
+                <span class="item-label">Email</span>
+                <span class="item-value">marellashanmukhareddy@gmail.com</span>
+              </div>
+            </a>
+
+            
+            <a href="tel:+916301098682" class="contact-item">
+              <div class="icon-box"><i class="fas fa-phone-alt"></i></div>
+              <div class="item-text">
+                <span class="item-label">Phone</span>
+                <span class="item-value">+91 6301098682</span>
+              </div>
+            </a>
+            
+            <div class="contact-item">
+              <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="item-text">
+                <span class="item-label">Location</span>
+                <span class="item-value">Hyderabad, Telangana, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-container glass-panel reveal reveal-delay-1">
+          <form class="contact-form" id="contact-form" action="#" method="POST">
+            <div class="form-group">
+              <input type="text" id="name" required placeholder="Your Name">
+              <label for="name">Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" required placeholder="Your Email">
+              <label for="email">Email</label>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" required placeholder="Subject">
+              <label for="subject">Subject</label>
+            </div>
+            <div class="form-group">
+              <textarea id="message" rows="5" required placeholder="Your Message"></textarea>
+              <label for="message">Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div class="form-message" id="form-message"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#hero" class="logo">Shanmukha<span>.</span></a>
+          <p>Aspiring Data Analyst & ML Engineer</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="./marellashanmukharedresume.pdf" download class="btn btn-resume btn-outline btn-sm hidden-mobile" aria-label="Resume">Resume</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Marella Shanmukha Reddy. All rights reserved.</p>
+        <div class="back-to-top" id="back-to-top">
+          <i class="fas fa-chevron-up"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- EmailJS (for contact form) -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
