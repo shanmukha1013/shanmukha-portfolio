@@ -1228,9 +1228,24 @@ nav.scrolled {
 /* Projects Section */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2rem;
 }
+
+/* Tablet: 2 columns */
+@media (max-width: 992px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 /* Project card actions */
 .project-actions-hidden {
@@ -1245,6 +1260,16 @@ nav.scrolled {
   transition: all var(--transition-normal);
   position: relative;
 }
+
+/* Ensure all cards align and stay equal height */
+.projects-grid {
+  align-items: stretch;
+}
+
+.project-card {
+  box-sizing: border-box;
+}
+
 
 .project-card:hover {
   transform: translateY(-8px);
