@@ -1,4 +1,4 @@
-﻿﻿<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -321,8 +321,11 @@
             <span class="project-badge">Priority Project</span>
             <p class="project-desc">An AI-powered platform helping entrepreneurs validate and improve startup ideas by analyzing business concepts, growth potential, and viability before investing resources.</p>
 
-            <!-- Launch URL not provided; hidden per requirements -->
-            <div class="project-actions project-actions-hidden" aria-label="Project actions"></div>
+            <div class="project-actions" aria-label="Project actions">
+              <a class="project-btn project-btn-launch" href="https://start-punch.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-rocket"></i> 🚀 Launch Application
+              </a>
+            </div>
 
             <div class="project-tech">
               <span>AI</span><span>Machine Learning</span><span>Python</span><span>Full-Stack</span>
@@ -333,7 +336,7 @@
 
 
         <!-- ForReal -->
-        <div class="project-card glass-panel reveal reveal-delay-1" aria-label="ForReal project">
+        <a class="project-card project-card-link glass-panel reveal reveal-delay-1" href="https://for-real-seven.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="ForReal project">
           <div class="project-header">
             <div class="project-icon"><i class="fas fa-comments"></i></div>
             <div class="project-links" aria-hidden="true">
@@ -343,6 +346,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 class="project-quick-icon project-quick-github"
+                onclick="event.stopPropagation();"
               >
                 <i class="fab fa-github"></i>
               </a>
@@ -352,7 +356,7 @@
             <h3 class="project-title">ForReal</h3>
             <p class="project-desc">A community-focused social platform encouraging meaningful discussions and knowledge sharing. Users can create specialized rooms, debate, and exchange insights on common interests.</p>
             <div class="project-actions" aria-label="Project actions">
-              <a class="project-btn project-btn-launch" href="https://for-real-seven.vercel.app" target="_blank" rel="noopener noreferrer">
+              <a class="project-btn project-btn-launch" href="https://for-real-seven.vercel.app" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">
                 <i class="fas fa-rocket"></i> 🚀 Launch Application
               </a>
             </div>
@@ -360,7 +364,54 @@
               <span>Full-Stack</span><span>JavaScript</span><span>Web Sockets</span>
             </div>
           </div>
-        </div>
+        </a>
+
+
+
+        <!-- PunchStart AI -->
+        <a class="project-card project-card-link glass-panel reveal" href="https://start-punch.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="PunchStart AI project">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-brain"></i></div>
+            <div class="project-links" aria-hidden="true">
+              <a
+                href="https://github.com/shanmukha1013/punchstart-ai"
+                aria-label="PunchStart AI GitHub repository"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-quick-icon project-quick-github"
+                onclick="event.stopPropagation();"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">PunchStart AI</h3>
+            <span class="project-badge">Featured</span>
+            <p class="project-desc">AI-powered startup validation and launch assistant.</p>
+
+            <div class="project-actions" aria-label="Project actions">
+              <a class="project-btn project-btn-launch" href="https://start-punch.vercel.app/" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">
+                <i class="fas fa-rocket"></i> 🚀 Launch Application
+              </a>
+              <a class="project-btn project-btn-code" href="https://github.com/shanmukha1013/punchstart-ai" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">
+                <i class="fab fa-github"></i> View Code
+              </a>
+            </div>
+
+            <div class="project-tech" aria-label="Project technologies">
+              <span>AI</span>
+              <span>SaaS</span>
+              <span>Startup</span>
+              <span>Next.js</span>
+              <span>FastAPI</span>
+            </div>
+
+            <div class="project-desc" style="margin-top: 0.6rem;">
+              PunchStart helps founders validate startup ideas, analyze market opportunities, generate business plans, identify competitors, and create actionable launch strategies using AI.
+            </div>
+          </div>
+        </a>
 
 
 
