@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --bg-color: #0a0a0a;
   --surface-color: #141414;
   --surface-color-light: #1f1f1f;
@@ -1230,6 +1230,7 @@ nav.scrolled {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 2rem;
+  align-items: stretch;
 }
 
 /* Project card actions */
@@ -1385,7 +1386,6 @@ nav.scrolled {
   color: var(--text-secondary);
   font-size: 0.95rem;
   margin-bottom: 1.5rem;
-  flex-grow: 1;
 }
 
 .project-tech {
@@ -1395,6 +1395,7 @@ nav.scrolled {
   font-family: var(--font-mono);
   font-size: 0.8rem;
   color: var(--text-tertiary);
+  margin-top: auto;
 }
 
 .project-tech span {
