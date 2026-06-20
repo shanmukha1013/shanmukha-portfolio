@@ -2172,6 +2172,86 @@ nav.scrolled {
   background: rgba(16, 185, 129, 0.08);
 }
 
+/* MSR Branding System Styles */
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.logo-msr {
+  font-family: var(--font-secondary);
+  font-weight: 800;
+  font-size: 1.55rem;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+}
+
+.logo-msr span {
+  color: var(--primary-color) !important;
+}
+
+.logo-divider {
+  color: rgba(255, 255, 255, 0.15);
+  font-weight: 300;
+  font-size: 1.1rem;
+  user-select: none;
+}
+
+.logo-name {
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  letter-spacing: -0.01em;
+}
+
+.logo-name span {
+  color: var(--primary-color) !important;
+}
+
+/* Loader Animation Styles */
+.loader-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+.logo-letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeUpLetter 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.logo-letter:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.logo-letter:nth-child(2) {
+  animation-delay: 0.25s;
+}
+.logo-letter:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeUpLetter {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-name {
+    display: none;
+  }
+  .logo-divider {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .coding-spotlight-inner {
     flex-direction: column;
