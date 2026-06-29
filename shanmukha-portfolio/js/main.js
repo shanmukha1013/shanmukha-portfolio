@@ -1,31 +1,14 @@
-﻿document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
   // Loader
   const loader = document.getElementById('loader');
   setTimeout(() => {
     loader.classList.add('hidden');
   }, 1000);
 
-  // Custom Cursor
-  const cursorDot = document.getElementById('cursor-dot');
-  const cursorOutline = document.getElementById('cursor-outline');
-
-  window.addEventListener('mousemove', (e) => {
-    const posX = e.clientX;
-    const posY = e.clientY;
-
-    cursorDot.style.left = `${posX}px`;
-    cursorDot.style.top = `${posY}px`;
-
-    cursorOutline.animate({
-      left: `${posX}px`,
-      top: `${posY}px`
-    }, { duration: 500, fill: 'forwards' });
-  });
-
   // Typing Effect
   const typedTextSpan = document.querySelector(".typed-text");
   const cursorSpan = document.querySelector(".cursor");
-  const textArray = ["Data Analyst", "ML Engineer", "Software Developer", "Problem Solver"];
+  const textArray = ["Software Developer", "Full Stack Engineer", "Problem Solver"];
   const typingDelay = 100;
   const erasingDelay = 50;
   const newTextDelay = 2000;
