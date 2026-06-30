@@ -69,49 +69,42 @@
   </nav>
 
   <!-- Hero Section -->
-  <section id="hero" class="hero-section" aria-label="Hero section">
-    <div class="hero-background">
-      <div class="glow-orb orb-1"></div>
-      <div class="glow-orb orb-2"></div>
-      <div class="grid-overlay"></div>
-    </div>
-
+  <section id="hero" class="hero-section" aria-label="Hero section" style="padding-top: 10rem; padding-bottom: 6rem; display: flex; align-items: center; min-height: 100vh;">
     <div class="container hero-container">
-      <div class="hero-content reveal" style="padding-right: 4rem;">
-        <div style="font-size: 1.25rem; color: var(--text-secondary); margin-bottom: 1rem; font-family: var(--font-mono);">Hi, I'm</div>
-        <h1 class="hero-title" style="font-size: clamp(3.5rem, 8vw, 6.5rem); line-height: 0.95; letter-spacing: -2px; margin-bottom: 2rem; color: var(--text-primary); font-weight: 800;">
-          Marella<br>
-          <span class="highlight">Shanmukha</span><br>
-          Reddy
-        </h1>
-        <h2 class="hero-subtitle" style="font-size: 1.15rem; color: var(--text-secondary); margin-bottom: 2rem; font-weight: 500; letter-spacing: 0.5px; line-height: 1.8;">
-          <span class="text-accent">AI Engineer</span> &nbsp;•&nbsp; Machine Learning Engineer &nbsp;•&nbsp; Data Analyst &nbsp;•&nbsp; Full Stack Developer
-        </h2>
-        <p class="hero-description" style="font-size: 1.1rem; max-width: 650px; margin-bottom: 3rem; color: var(--text-primary); line-height: 1.7;">
-          Computer Science undergraduate building AI-powered software, production-grade machine learning systems, and scalable full-stack applications focused on solving real-world problems.
+      <div class="hero-content reveal">
+        <div style="font-size: 1.25rem; color: var(--text-secondary); margin-bottom: 0.5rem; font-family: var(--font-secondary);">Hi, I'm</div>
+        
+        <h1 class="hero-title" style="font-size: clamp(3rem, 6vw, 4.5rem); line-height: 1.1; letter-spacing: -1px; margin-bottom: 2.5rem; color: var(--text-primary); font-weight: 700;">
+          Marella Shanmukha Reddy
+</h1>
+
+        <div class="hero-roles" style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 2.5rem; font-family: var(--font-mono); font-size: 1.1rem; color: var(--text-secondary);">
+          <span style="color: var(--primary-color); font-weight: 600;">AI Engineer</span>
+          <span>Machine Learning Engineer</span>
+          <span>Data Engineer</span>
+          <span>Full Stack Developer</span>
+        </div>
+
+        <p class="hero-description" style="font-size: 1.15rem; max-width: 500px; margin-bottom: 3.5rem; color: var(--text-secondary); line-height: 1.6;">
+          Building production AI systems,<br>
+          machine learning infrastructure,<br>
+          and intelligent software products.
         </p>
-        <div class="hero-cta" style="display: flex; gap: 1.5rem; align-items: center;">
-          <a href="#projects" class="btn btn-primary" style="padding: 1rem 2rem; font-size: 1.05rem;">
-            Explore My Work
+
+        <div class="hero-cta" style="display: flex; gap: 1rem; align-items: center;">
+          <a href="#projects" class="btn btn-primary" style="padding: 0.85rem 1.75rem; font-size: 1rem; border-radius: var(--radius-sm);">
+            Explore Projects
           </a>
-          <a href="./marellashanmukharedresume.pdf" download="Marella_Shanmukha_Reddy_Resume.pdf" class="btn btn-outline" style="padding: 1rem 2rem; font-size: 1.05rem;">
-            Download Resume
+          <a href="./marellashanmukharedresume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: 0.85rem 1.75rem; font-size: 1rem; border-radius: var(--radius-sm);">
+            Resume
           </a>
         </div>
       </div>
 
-      <div class="hero-visual reveal reveal-delay-1" style="display: flex; justify-content: center; align-items: center;">
-        <div class="image-wrapper olive-glow" style="width: 100%; max-width: 450px; margin-left: auto;">
-          <img src="images/mesangi.jpg" alt="Marella Shanmukha Reddy" class="profile-img" loading="eager" fetchpriority="high" style="width: 100%; height: auto; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+      <div class="hero-visual reveal reveal-delay-1" style="display: flex; justify-content: flex-end;">
+        <div class="image-wrapper" style="width: 100%; max-width: 450px; border-radius: 24px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); overflow: hidden;">
+          <img src="images/mesangi.jpg" alt="Marella Shanmukha Reddy" class="profile-img" loading="eager" fetchpriority="high" style="width: 100%; height: auto; display: block; border-radius: 24px;">
         </div>
-      </div>
-    </div>
-    <div class="scroll-indicator">
-      <div class="mouse">
-        <div class="wheel"></div>
-      </div>
-      <div class="arrow">
-        <span></span><span></span><span></span>
       </div>
     </div>
   </section>
@@ -374,266 +367,118 @@
       </div>
 
       <div class="projects-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;" role="list" aria-label="Featured projects">
-        
-        <!-- ProjectCard: PunchStart -->
-        <div class="project-card glass-panel reveal" role="listitem" aria-label="PunchStart project" style="display: flex; flex-direction: column; height: 100%; padding: 2rem;">
-          <div class="project-header" style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem;">
-            <img src="images/logos/punchstart.svg" alt="PunchStart Logo" style="width: 56px; height: 56px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-            <h3 class="project-title" style="font-size: 1.5rem; margin: 0; color: var(--text-primary);">PunchStart</h3>
+        <div class="project-card reveal" role="listitem" style="padding: 2rem; border-radius: var(--radius-lg); background: var(--surface-color); border: 1px solid var(--border-color); display: flex; flex-direction: column;">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem;">
+            <img src="images/logos/punchstart.svg" alt="PunchStart Logo" style="width: 48px; height: 48px; border-radius: 12px;">
+            <h3 style="font-size: 1.5rem; color: var(--text-primary); margin: 0; font-weight: 700;">PunchStart</h3>
           </div>
-          <div class="project-body" style="flex: 1; display: flex; flex-direction: column;">
-            <div style="margin-bottom: 1.25rem;">
-              <h4 style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.35rem;">Problem</h4>
-              <p style="font-size: 1rem; color: var(--text-secondary); line-height: 1.6;">Early-stage founders struggle validating startup ideas and identifying market opportunities.</p>
-            </div>
-            <div style="margin-bottom: 1.25rem;">
-              <h4 style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.35rem;">Solution</h4>
-              <p style="font-size: 1rem; color: var(--text-primary); line-height: 1.6;">An AI-powered startup validation platform that analyzes ideas, competitors, target markets and execution strategies using intelligent automation.</p>
-            </div>
-            <div style="margin-bottom: 1.5rem;">
-              <h4 style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.35rem;">Impact</h4>
-              <p style="font-size: 1rem; color: var(--primary-color); font-weight: 500; line-height: 1.6;">Helps founders make informed decisions before investing time and money into building products.</p>
-            </div>
-            <div class="project-tech" style="margin-top: auto; margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
-              <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Next.js</span>
-              <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">FastAPI</span>
-              <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Gemini AI</span>
-              <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">MongoDB</span>
-            </div>
-            <div style="margin-bottom: 1.5rem;">
-              <span style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--primary-color-dim); color: var(--primary-color); padding: 0.35rem 0.85rem; border-radius: 999px; font-size: 0.85rem; font-weight: 600;"><span style="color: #22c55e;">●</span> Live</span>
-            </div>
-            <div class="project-actions" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
-              <a class="btn btn-primary btn-sm" href="https://start-punch.vercel.app/" target="_blank" style="text-align: center;">Live Project</a>
-              <a class="btn btn-outline btn-sm" href="https://github.com/shanmukha1013/punchstart-ai" target="_blank" style="text-align: center;">Source Code</a>
-              <button class="btn btn-outline btn-sm" style="opacity: 0.5; cursor: not-allowed; font-size: 0.85rem;">Case Study</button>
-              <button class="btn btn-outline btn-sm" style="opacity: 0.5; cursor: not-allowed; font-size: 0.85rem;">Architecture</button>
-            </div>
+          <p style="color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 1.5rem; line-height: 1.6;">
+            AI-powered startup validation platform that analyzes ideas, competitors, and market strategies.
+          </p>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2.5rem;">
+            <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Next.js</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">FastAPI</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Gemini AI</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">MongoDB</span>
+          </div>
+          <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center;">
+            <span style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--text-tertiary);"><span style="color: #22c55e;">●</span> Live</span>
+            <a href="punchstart.html" class="btn btn-primary btn-sm" style="border-radius: var(--radius-sm); padding: 0.5rem 1.25rem;">Case Study</a>
           </div>
         </div>
-
-        <!-- ProjectCard: ForReal -->
-        <div class="project-card glass-panel reveal" role="listitem" aria-label="ForReal project" style="display: flex; flex-direction: column; height: 100%; padding: 2rem;">
-          <div class="project-header" style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem;">
-            <img src="images/logos/forreal.svg" alt="ForReal Logo" style="width: 56px; height: 56px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-            <h3 class="project-title" style="font-size: 1.5rem; margin: 0; color: var(--text-primary);">ForReal</h3>
+        <div class="project-card reveal" role="listitem" style="padding: 2rem; border-radius: var(--radius-lg); background: var(--surface-color); border: 1px solid var(--border-color); display: flex; flex-direction: column;">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem;">
+            <img src="images/logos/forreal.svg" alt="ForReal Logo" style="width: 48px; height: 48px; border-radius: 12px;">
+            <h3 style="font-size: 1.5rem; color: var(--text-primary); margin: 0; font-weight: 700;">ForReal</h3>
           </div>
-          <div class="project-body" style="flex: 1; display: flex; flex-direction: column;">
-            <div style="margin-bottom: 1.25rem;">
-              <h4 style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.35rem;">Problem</h4>
-              <p style="font-size: 1rem; color: var(--text-secondary); line-height: 1.6;">Modern social platforms prioritize engagement over authentic conversations.</p>
-            </div>
-            <div style="margin-bottom: 1.25rem;">
-              <h4 style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.35rem;">Solution</h4>
-              <p style="font-size: 1rem; color: var(--text-primary); line-height: 1.6;">A community-driven social platform designed for meaningful discussions, private communities and real-time interactions.</p>
-            </div>
-            <div style="margin-bottom: 1.5rem;">
-              <h4 style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.35rem;">Impact</h4>
-              <p style="font-size: 1rem; color: var(--primary-color); font-weight: 500; line-height: 1.6;">Encourages quality conversations while building trusted online communities.</p>
-            </div>
-            <div class="project-tech" style="margin-top: auto; margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
-              <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">React</span>
-              <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Node.js</span>
-              <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">WebSockets</span>
-              <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">MongoDB</span>
-            </div>
-            <div style="margin-bottom: 1.5rem;">
-              <span style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--primary-color-dim); color: var(--primary-color); padding: 0.35rem 0.85rem; border-radius: 999px; font-size: 0.85rem; font-weight: 600;"><span style="color: #22c55e;">●</span> Live</span>
-            </div>
-            <div class="project-actions" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
-              <a class="btn btn-primary btn-sm" href="https://for-real-seven.vercel.app" target="_blank" style="text-align: center;">Live Project</a>
-              <a class="btn btn-outline btn-sm" href="https://github.com/shanmukha1013/ForReal" target="_blank" style="text-align: center;">Source Code</a>
-              <button class="btn btn-outline btn-sm" style="opacity: 0.5; cursor: not-allowed; font-size: 0.85rem;">Case Study</button>
-              <button class="btn btn-outline btn-sm" style="opacity: 0.5; cursor: not-allowed; font-size: 0.85rem;">Architecture</button>
-            </div>
+          <p style="color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 1.5rem; line-height: 1.6;">
+            Community-driven social platform designed for meaningful discussions and private communities.
+          </p>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2.5rem;">
+            <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">React</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Node.js</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">WebSockets</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">MongoDB</span>
+          </div>
+          <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center;">
+            <span style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--text-tertiary);"><span style="color: #22c55e;">●</span> Live</span>
+            <a href="forreal.html" class="btn btn-primary btn-sm" style="border-radius: var(--radius-sm); padding: 0.5rem 1.25rem;">Case Study</a>
           </div>
         </div>
-
-        <!-- ProjectCard: Flexy -->
-        <div class="project-card glass-panel reveal" role="listitem" aria-label="Flexy project" style="display: flex; flex-direction: column; height: 100%; padding: 2rem;">
-          <div class="project-header" style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem;">
-            <img src="images/logos/flexy.svg" alt="Flexy Logo" style="width: 56px; height: 56px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-            <h3 class="project-title" style="font-size: 1.5rem; margin: 0; color: var(--text-primary);">Flexy</h3>
+        <div class="project-card reveal" role="listitem" style="padding: 2rem; border-radius: var(--radius-lg); background: var(--surface-color); border: 1px solid var(--border-color); display: flex; flex-direction: column;">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem;">
+            <img src="images/logos/flexy.svg" alt="Flexy Logo" style="width: 48px; height: 48px; border-radius: 12px;">
+            <h3 style="font-size: 1.5rem; color: var(--text-primary); margin: 0; font-weight: 700;">Flexy</h3>
           </div>
-          <div class="project-body" style="flex: 1; display: flex; flex-direction: column;">
-            <div style="margin-bottom: 1.25rem;">
-              <h4 style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.35rem;">Problem</h4>
-              <p style="font-size: 1rem; color: var(--text-secondary); line-height: 1.6;">Collectors lack a dedicated platform to showcase, discover and trade collectibles safely.</p>
-            </div>
-            <div style="margin-bottom: 1.25rem;">
-              <h4 style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.35rem;">Solution</h4>
-              <p style="font-size: 1rem; color: var(--text-primary); line-height: 1.6;">A modern digital marketplace connecting collectors through verified listings, communities and secure trading.</p>
-            </div>
-            <div style="margin-bottom: 1.5rem;">
-              <h4 style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.35rem;">Impact</h4>
-              <p style="font-size: 1rem; color: var(--primary-color); font-weight: 500; line-height: 1.6;">Creates a trusted ecosystem for collectors to build, share and grow their collections.</p>
-            </div>
-            <div class="project-tech" style="margin-top: auto; margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
-              <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">React</span>
-              <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Node.js</span>
-              <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Express</span>
-              <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">MongoDB</span>
-            </div>
-            <div style="margin-bottom: 1.5rem;">
-              <span style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--primary-color-dim); color: var(--primary-color); padding: 0.35rem 0.85rem; border-radius: 999px; font-size: 0.85rem; font-weight: 600;"><span style="color: #22c55e;">●</span> Live</span>
-            </div>
-            <div class="project-actions" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
-              <a class="btn btn-primary btn-sm" href="https://flexy-peach.vercel.app" target="_blank" style="text-align: center;">Live Project</a>
-              <a class="btn btn-outline btn-sm" href="https://github.com/shanmukha1013/Flexy" target="_blank" style="text-align: center;">Source Code</a>
-              <button class="btn btn-outline btn-sm" style="opacity: 0.5; cursor: not-allowed; font-size: 0.85rem;">Case Study</button>
-              <button class="btn btn-outline btn-sm" style="opacity: 0.5; cursor: not-allowed; font-size: 0.85rem;">Architecture</button>
-            </div>
+          <p style="color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 1.5rem; line-height: 1.6;">
+            Full-stack e-commerce marketplace with real-time inventory and secure payment processing.
+          </p>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2.5rem;">
+            <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">React</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Express</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Stripe</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">PostgreSQL</span>
+          </div>
+          <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center;">
+            <span style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--text-tertiary);"><span style="color: #22c55e;">●</span> Live</span>
+            <a href="flexy.html" class="btn btn-primary btn-sm" style="border-radius: var(--radius-sm); padding: 0.5rem 1.25rem;">Case Study</a>
           </div>
         </div>
-
-        <!-- ProjectCard: SideKick -->
-        <div class="project-card glass-panel reveal" role="listitem" aria-label="SideKick project" style="display: flex; flex-direction: column; height: 100%; padding: 2rem;">
-          <div class="project-header" style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem;">
-            <img src="images/logos/sidekick.svg" alt="SideKick Logo" style="width: 56px; height: 56px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-            <h3 class="project-title" style="font-size: 1.5rem; margin: 0; color: var(--text-primary);">SideKick</h3>
+        <div class="project-card reveal" role="listitem" style="padding: 2rem; border-radius: var(--radius-lg); background: var(--surface-color); border: 1px solid var(--border-color); display: flex; flex-direction: column;">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem;">
+            <img src="images/logos/sidekick.svg" alt="SideKick Logo" style="width: 48px; height: 48px; border-radius: 12px;">
+            <h3 style="font-size: 1.5rem; color: var(--text-primary); margin: 0; font-weight: 700;">SideKick</h3>
           </div>
-          <div class="project-body" style="flex: 1; display: flex; flex-direction: column;">
-            <div style="margin-bottom: 1.25rem;">
-              <h4 style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.35rem;">Problem</h4>
-              <p style="font-size: 1rem; color: var(--text-secondary); line-height: 1.6;">Students and professionals use multiple disconnected productivity tools.</p>
-            </div>
-            <div style="margin-bottom: 1.25rem;">
-              <h4 style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.35rem;">Solution</h4>
-              <p style="font-size: 1rem; color: var(--text-primary); line-height: 1.6;">An AI-powered productivity workspace combining tasks, notes, workflows and intelligent assistance in a single platform.</p>
-            </div>
-            <div style="margin-bottom: 1.5rem;">
-              <h4 style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.35rem;">Impact</h4>
-              <p style="font-size: 1rem; color: var(--primary-color); font-weight: 500; line-height: 1.6;">Improves productivity by centralizing daily work with AI assistance.</p>
-            </div>
-            <div class="project-tech" style="margin-top: auto; margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
-              <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">React</span>
-              <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">AI Models</span>
-              <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Node.js</span>
-              <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">PostgreSQL</span>
-            </div>
-            <div style="margin-bottom: 1.5rem;">
-              <span style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--primary-color-dim); color: var(--primary-color); padding: 0.35rem 0.85rem; border-radius: 999px; font-size: 0.85rem; font-weight: 600;"><span style="color: #22c55e;">●</span> Live</span>
-            </div>
-            <div class="project-actions" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
-              <a class="btn btn-primary btn-sm" href="https://sidekick-sand-eight.vercel.app" target="_blank" style="text-align: center;">Live Project</a>
-              <a class="btn btn-outline btn-sm" href="https://github.com/shanmukha1013/zobnext" target="_blank" style="text-align: center;">Source Code</a>
-              <button class="btn btn-outline btn-sm" style="opacity: 0.5; cursor: not-allowed; font-size: 0.85rem;">Case Study</button>
-              <button class="btn btn-outline btn-sm" style="opacity: 0.5; cursor: not-allowed; font-size: 0.85rem;">Architecture</button>
-            </div>
+          <p style="color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 1.5rem; line-height: 1.6;">
+            Comprehensive job application tracking system with automated resume parsing.
+          </p>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2.5rem;">
+            <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Vue.js</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Django</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">PostgreSQL</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Redis</span>
+          </div>
+          <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center;">
+            <span style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--text-tertiary);"><span style="color: #22c55e;">●</span> Live</span>
+            <a href="sidekick.html" class="btn btn-primary btn-sm" style="border-radius: var(--radius-sm); padding: 0.5rem 1.25rem;">Case Study</a>
           </div>
         </div>
-
-        <!-- ProjectCard: Feature Store Pipeline -->
-        <div class="project-card glass-panel reveal" role="listitem" aria-label="Feature Store Pipeline project" style="display: flex; flex-direction: column; height: 100%; padding: 2rem;">
-          <div class="project-header" style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem;">
-            <img src="images/logos/featurestore.svg" alt="Feature Store Logo" style="width: 56px; height: 56px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-            <h3 class="project-title" style="font-size: 1.5rem; margin: 0; color: var(--text-primary);">Feature Store Pipeline</h3>
+        <div class="project-card reveal" role="listitem" style="padding: 2rem; border-radius: var(--radius-lg); background: var(--surface-color); border: 1px solid var(--border-color); display: flex; flex-direction: column;">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem;">
+            <img src="images/logos/featurestore.svg" alt="Feature Store Engine Logo" style="width: 48px; height: 48px; border-radius: 12px;">
+            <h3 style="font-size: 1.5rem; color: var(--text-primary); margin: 0; font-weight: 700;">Feature Store Engine</h3>
           </div>
-          <div class="project-body" style="flex: 1; display: flex; flex-direction: column;">
-            <div style="margin-bottom: 1.25rem;">
-              <h4 style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.35rem;">Problem</h4>
-              <p style="font-size: 1rem; color: var(--text-secondary); line-height: 1.6;">Training-serving feature inconsistency causes machine learning models to fail in production.</p>
-            </div>
-            <div style="margin-bottom: 1.25rem;">
-              <h4 style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.35rem;">Solution</h4>
-              <p style="font-size: 1rem; color: var(--text-primary); line-height: 1.6;">Production-grade feature store architecture ensuring consistent feature availability across training and inference pipelines.</p>
-            </div>
-            <div style="margin-bottom: 1.5rem;">
-              <h4 style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.35rem;">Impact</h4>
-              <p style="font-size: 1rem; color: var(--primary-color); font-weight: 500; line-height: 1.6;">Improves model reliability, consistency and production readiness.</p>
-            </div>
-            <div class="project-tech" style="margin-top: auto; margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
-              <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Python</span>
-              <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Redis</span>
-              <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">PostgreSQL</span>
-              <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Feast</span>
-            </div>
-            <div style="margin-bottom: 1.5rem;">
-              <span style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--surface-color-light); padding: 0.35rem 0.85rem; border-radius: 999px; font-size: 0.85rem; font-weight: 600; color: var(--text-secondary);"><span style="color: #eab308;">●</span> In Development</span>
-            </div>
-            <div class="project-actions" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
-              <button class="btn btn-outline btn-sm" style="opacity: 0.5; cursor: not-allowed; font-size: 0.85rem;">GitHub</button>
-              <button class="btn btn-outline btn-sm" style="opacity: 0.5; cursor: not-allowed; font-size: 0.85rem;">Live Project</button>
-              <button class="btn btn-outline btn-sm" style="opacity: 0.5; cursor: not-allowed; font-size: 0.85rem;">Case Study</button>
-              <button class="btn btn-outline btn-sm" style="opacity: 0.5; cursor: not-allowed; font-size: 0.85rem;">Architecture</button>
-            </div>
+          <p style="color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 1.5rem; line-height: 1.6;">
+            Scalable ML feature store for real-time model serving and offline batch training.
+          </p>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2.5rem;">
+            <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Python</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Redis</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Apache Kafka</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Docker</span>
+          </div>
+          <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center;">
+            <span style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--text-tertiary);"><span style="color: #f59e0b;">●</span> Development</span>
+            <a href="featurestore.html" class="btn btn-primary btn-sm" style="border-radius: var(--radius-sm); padding: 0.5rem 1.25rem;">Case Study</a>
           </div>
         </div>
-
-        <!-- ProjectCard: Model Optimization Pipeline -->
-        <div class="project-card glass-panel reveal" role="listitem" aria-label="Model Optimization Pipeline project" style="display: flex; flex-direction: column; height: 100%; padding: 2rem;">
-          <div class="project-header" style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem;">
-            <img src="images/logos/modelopt.svg" alt="Model Optimization Logo" style="width: 56px; height: 56px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-            <h3 class="project-title" style="font-size: 1.5rem; margin: 0; color: var(--text-primary);">Model Optimization Pipeline</h3>
+        <div class="project-card reveal" role="listitem" style="padding: 2rem; border-radius: var(--radius-lg); background: var(--surface-color); border: 1px solid var(--border-color); display: flex; flex-direction: column;">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem;">
+            <img src="images/logos/modelopt.svg" alt="ModelOpt Logo" style="width: 48px; height: 48px; border-radius: 12px;">
+            <h3 style="font-size: 1.5rem; color: var(--text-primary); margin: 0; font-weight: 700;">ModelOpt</h3>
           </div>
-          <div class="project-body" style="flex: 1; display: flex; flex-direction: column;">
-            <div style="margin-bottom: 1.25rem;">
-              <h4 style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.35rem;">Problem</h4>
-              <p style="font-size: 1rem; color: var(--text-secondary); line-height: 1.6;">Machine learning models become expensive and slow in production environments.</p>
-            </div>
-            <div style="margin-bottom: 1.25rem;">
-              <h4 style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.35rem;">Solution</h4>
-              <p style="font-size: 1rem; color: var(--text-primary); line-height: 1.6;">Optimization framework supporting benchmarking, pruning, quantization and deployment optimization.</p>
-            </div>
-            <div style="margin-bottom: 1.5rem;">
-              <h4 style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.35rem;">Impact</h4>
-              <p style="font-size: 1rem; color: var(--primary-color); font-weight: 500; line-height: 1.6;">Reduces inference latency while improving deployment efficiency.</p>
-            </div>
-            <div class="project-tech" style="margin-top: auto; margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
-              <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">PyTorch</span>
-              <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">ONNX</span>
-              <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">TensorRT</span>
-              <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Python</span>
-            </div>
-            <div style="margin-bottom: 1.5rem;">
-              <span style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--surface-color-light); padding: 0.35rem 0.85rem; border-radius: 999px; font-size: 0.85rem; font-weight: 600; color: var(--text-secondary);"><span style="color: #eab308;">●</span> In Development</span>
-            </div>
-            <div class="project-actions" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
-              <button class="btn btn-outline btn-sm" style="opacity: 0.5; cursor: not-allowed; font-size: 0.85rem;">GitHub</button>
-              <button class="btn btn-outline btn-sm" style="opacity: 0.5; cursor: not-allowed; font-size: 0.85rem;">Live Project</button>
-              <button class="btn btn-outline btn-sm" style="opacity: 0.5; cursor: not-allowed; font-size: 0.85rem;">Case Study</button>
-              <button class="btn btn-outline btn-sm" style="opacity: 0.5; cursor: not-allowed; font-size: 0.85rem;">Architecture</button>
-            </div>
+          <p style="color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 1.5rem; line-height: 1.6;">
+            Automated hyperparameter tuning pipeline for deep learning models at scale.
+          </p>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2.5rem;">
+            <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">PyTorch</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Ray Tune</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">MLflow</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">AWS EC2</span>
+          </div>
+          <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center;">
+            <span style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--text-tertiary);"><span style="color: #f59e0b;">●</span> Development</span>
+            <a href="modelopt.html" class="btn btn-primary btn-sm" style="border-radius: var(--radius-sm); padding: 0.5rem 1.25rem;">Case Study</a>
           </div>
         </div>
-
-        <!-- ProjectCard: Production RAG Reliability -->
-        <div class="project-card glass-panel reveal" role="listitem" aria-label="Production RAG Reliability project" style="display: flex; flex-direction: column; height: 100%; padding: 2rem;">
-          <div class="project-header" style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem;">
-            <img src="images/logos/rag.svg" alt="RAG Reliability Logo" style="width: 56px; height: 56px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-            <h3 class="project-title" style="font-size: 1.5rem; margin: 0; color: var(--text-primary);">Production RAG Reliability</h3>
+        <div class="project-card reveal" role="listitem" style="padding: 2rem; border-radius: var(--radius-lg); background: var(--surface-color); border: 1px solid var(--border-color); display: flex; flex-direction: column;">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem;">
+            <img src="images/logos/rag.svg" alt="RAG Knowledge Base Logo" style="width: 48px; height: 48px; border-radius: 12px;">
+            <h3 style="font-size: 1.5rem; color: var(--text-primary); margin: 0; font-weight: 700;">RAG Knowledge Base</h3>
           </div>
-          <div class="project-body" style="flex: 1; display: flex; flex-direction: column;">
-            <div style="margin-bottom: 1.25rem;">
-              <h4 style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.35rem;">Problem</h4>
-              <p style="font-size: 1rem; color: var(--text-secondary); line-height: 1.6;">Retrieval-Augmented Generation systems frequently hallucinate without proper evaluation.</p>
-            </div>
-            <div style="margin-bottom: 1.25rem;">
-              <h4 style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.35rem;">Solution</h4>
-              <p style="font-size: 1rem; color: var(--text-primary); line-height: 1.6;">Evaluation platform measuring retrieval quality, grounding, hallucination detection and answer reliability.</p>
-            </div>
-            <div style="margin-bottom: 1.5rem;">
-              <h4 style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.35rem;">Impact</h4>
-              <p style="font-size: 1rem; color: var(--primary-color); font-weight: 500; line-height: 1.6;">Improves trustworthiness and monitoring of enterprise RAG applications.</p>
-            </div>
-            <div class="project-tech" style="margin-top: auto; margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
-              <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">LangChain</span>
-              <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">LlamaIndex</span>
-              <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Pinecone</span>
-              <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Python</span>
-            </div>
-            <div style="margin-bottom: 1.5rem;">
-              <span style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--surface-color-light); padding: 0.35rem 0.85rem; border-radius: 999px; font-size: 0.85rem; font-weight: 600; color: var(--text-secondary);"><span style="color: #eab308;">●</span> In Development</span>
-            </div>
-            <div class="project-actions" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
-              <button class="btn btn-outline btn-sm" style="opacity: 0.5; cursor: not-allowed; font-size: 0.85rem;">GitHub</button>
-              <button class="btn btn-outline btn-sm" style="opacity: 0.5; cursor: not-allowed; font-size: 0.85rem;">Live Project</button>
-              <button class="btn btn-outline btn-sm" style="opacity: 0.5; cursor: not-allowed; font-size: 0.85rem;">Case Study</button>
-              <button class="btn btn-outline btn-sm" style="opacity: 0.5; cursor: not-allowed; font-size: 0.85rem;">Architecture</button>
-            </div>
+          <p style="color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 1.5rem; line-height: 1.6;">
+            Retrieval-Augmented Generation system over enterprise documents using vector search.
+          </p>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2.5rem;">
+            <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">LangChain</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Pinecone</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">OpenAI API</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">FastAPI</span>
+          </div>
+          <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center;">
+            <span style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--text-tertiary);"><span style="color: #f59e0b;">●</span> Development</span>
+            <a href="rag.html" class="btn btn-primary btn-sm" style="border-radius: var(--radius-sm); padding: 0.5rem 1.25rem;">Case Study</a>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -650,29 +495,56 @@
       <div class="timeline" style="max-width: 800px; margin: 0 auto; padding-left: 20px; border-left: 2px solid var(--border-color);">
         
         <div class="timeline-item reveal" style="position: relative; margin-bottom: 3.5rem;">
-          <div class="timeline-dot" style="position: absolute; left: -26px; top: 0; width: 12px; height: 12px; border-radius: 50%; background: var(--primary-color); box-shadow: 0 0 0 6px var(--surface-color-light);"></div>
+          <div class="timeline-dot" style="position: absolute; left: -26px; top: 0; width: 12px; height: 12px; border-radius: 50%; background: var(--primary-color); box-shadow: 0 0 0 6px var(--surface-color);"></div>
           <div class="timeline-content" style="padding-left: 1.5rem;">
-            <span class="timeline-date" style="color: var(--primary-color); font-size: 0.95rem; font-family: var(--font-mono); font-weight: 600;">2024 — Present</span>
-            <h3 class="timeline-title" style="font-size: 1.4rem; color: var(--text-primary); margin: 0.5rem 0;">Built 7+ Production Applications</h3>
-            <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.7; margin-top: 0.5rem;">Engineered AI platforms, full-stack marketplaces, and ML pipelines focused on solving real user problems.</p>
+            <span class="timeline-date" style="color: var(--primary-color); font-size: 0.95rem; font-family: var(--font-mono); font-weight: 600;">Now</span>
+            <h3 class="timeline-title" style="font-size: 1.4rem; color: var(--text-primary); margin: 0.5rem 0;">Looking for AI Engineer Opportunities</h3>
+            <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.6; margin-top: 0.5rem;">Currently seeking roles where I can build and deploy scalable ML models, GenAI applications, and data-intensive platforms.</p>
           </div>
         </div>
 
         <div class="timeline-item reveal" style="position: relative; margin-bottom: 3.5rem;">
-          <div class="timeline-dot" style="position: absolute; left: -26px; top: 0; width: 12px; height: 12px; border-radius: 50%; background: var(--text-tertiary); box-shadow: 0 0 0 6px var(--surface-color-light);"></div>
+          <div class="timeline-dot" style="position: absolute; left: -26px; top: 0; width: 12px; height: 12px; border-radius: 50%; background: var(--text-tertiary); box-shadow: 0 0 0 6px var(--surface-color);"></div>
+          <div class="timeline-content" style="padding-left: 1.5rem;">
+            <span class="timeline-date" style="color: var(--text-tertiary); font-size: 0.95rem; font-family: var(--font-mono); font-weight: 600;">2026</span>
+            <h3 class="timeline-title" style="font-size: 1.4rem; color: var(--text-primary); margin: 0.5rem 0;">Production ML Projects</h3>
+            <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.6; margin-top: 0.5rem;">Shifted focus to deep learning infrastructure, building automated hyperparameter tuning pipelines and scalable RAG systems.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" style="position: relative; margin-bottom: 3.5rem;">
+          <div class="timeline-dot" style="position: absolute; left: -26px; top: 0; width: 12px; height: 12px; border-radius: 50%; background: var(--text-tertiary); box-shadow: 0 0 0 6px var(--surface-color);"></div>
+          <div class="timeline-content" style="padding-left: 1.5rem;">
+            <span class="timeline-date" style="color: var(--text-tertiary); font-size: 0.95rem; font-family: var(--font-mono); font-weight: 600;">2025</span>
+            <h3 class="timeline-title" style="font-size: 1.4rem; color: var(--text-primary); margin: 0.5rem 0;">Built 4 SaaS Products</h3>
+            <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.6; margin-top: 0.5rem;">Successfully engineered and deployed multiple AI-powered platforms including PunchStart and SideKick.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" style="position: relative; margin-bottom: 3.5rem;">
+          <div class="timeline-dot" style="position: absolute; left: -26px; top: 0; width: 12px; height: 12px; border-radius: 50%; background: var(--text-tertiary); box-shadow: 0 0 0 6px var(--surface-color);"></div>
+          <div class="timeline-content" style="padding-left: 1.5rem;">
+            <span class="timeline-date" style="color: var(--text-tertiary); font-size: 0.95rem; font-family: var(--font-mono); font-weight: 600;">2025</span>
+            <h3 class="timeline-title" style="font-size: 1.4rem; color: var(--text-primary); margin: 0.5rem 0;">Started AI</h3>
+            <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.6; margin-top: 0.5rem;">Began deep-diving into Large Language Models, prompt engineering, and integrating AI into software products.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" style="position: relative; margin-bottom: 3.5rem;">
+          <div class="timeline-dot" style="position: absolute; left: -26px; top: 0; width: 12px; height: 12px; border-radius: 50%; background: var(--text-tertiary); box-shadow: 0 0 0 6px var(--surface-color);"></div>
           <div class="timeline-content" style="padding-left: 1.5rem;">
             <span class="timeline-date" style="color: var(--text-tertiary); font-size: 0.95rem; font-family: var(--font-mono); font-weight: 600;">2024</span>
-            <h3 class="timeline-title" style="font-size: 1.4rem; color: var(--text-primary); margin: 0.5rem 0;">Data Science Intern at Retechie</h3>
-            <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.7; margin-top: 0.5rem;">Built and maintained scalable data pipelines, automated reporting, and deployed predictive models for production environments.</p>
+            <h3 class="timeline-title" style="font-size: 1.4rem; color: var(--text-primary); margin: 0.5rem 0;">Built Full Stack Apps</h3>
+            <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.6; margin-top: 0.5rem;">Learned React, Node.js, and databases. Built my first end-to-end web applications and learned system design.</p>
           </div>
         </div>
 
         <div class="timeline-item reveal" style="position: relative; margin-bottom: 2rem;">
-          <div class="timeline-dot" style="position: absolute; left: -26px; top: 0; width: 12px; height: 12px; border-radius: 50%; background: var(--text-tertiary); box-shadow: 0 0 0 6px var(--surface-color-light);"></div>
+          <div class="timeline-dot" style="position: absolute; left: -26px; top: 0; width: 12px; height: 12px; border-radius: 50%; background: var(--text-tertiary); box-shadow: 0 0 0 6px var(--surface-color);"></div>
           <div class="timeline-content" style="padding-left: 1.5rem;">
-            <span class="timeline-date" style="color: var(--text-tertiary); font-size: 0.95rem; font-family: var(--font-mono); font-weight: 600;">2024</span>
-            <h3 class="timeline-title" style="font-size: 1.4rem; color: var(--text-primary); margin: 0.5rem 0;">Started Competitive Programming</h3>
-            <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.7; margin-top: 0.5rem;">Solved 500+ algorithmic problems across LeetCode and competitive platforms, mastering core data structures.</p>
+            <span class="timeline-date" style="color: var(--text-tertiary); font-size: 0.95rem; font-family: var(--font-mono); font-weight: 600;">2023</span>
+            <h3 class="timeline-title" style="font-size: 1.4rem; color: var(--text-primary); margin: 0.5rem 0;">Started Programming</h3>
+            <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.6; margin-top: 0.5rem;">Wrote my first lines of code. Focused on Data Structures and Algorithms and competitive programming.</p>
           </div>
         </div>
         
@@ -731,84 +603,56 @@
 
   <!-- Contact Section -->
   <section id="contact" class="section">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2 class="section-title">Let's <span class="highlight">Connect</span></h2>
-        <div class="section-divider"></div>
-        <p class="section-subtitle">I'm always open to discussing internships, Machine Learning opportunities, Data Analytics roles, projects, collaborations, and innovative ideas.</p>
-
+    <div class="container" style="max-width: 900px;">
+      
+      <div style="text-align: center; margin-bottom: 4rem;">
+        <h2 class="section-title">Let's Connect</h2>
+        <p style="font-size: 1.15rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto; line-height: 1.6;">I'm currently looking for AI Engineering and Machine Learning roles. My inbox is always open for opportunities, collaborations, or just a quick hello.</p>
       </div>
 
-      <div class="contact-wrapper">
-        <div class="contact-info glass-panel reveal" style="padding: 3rem;">
-          <h3 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--text-primary);">Let's Connect</h3>
-          <p style="font-size: 1.15rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 2.5rem;">I'm always open to discussing internships, Machine Learning opportunities, Data Analytics roles, projects, collaborations, and innovative ideas.</p>
-
-          <div class="quick-social" role="group" aria-label="Social links" style="display: flex; gap: 1rem; margin-bottom: 3rem; flex-wrap: wrap;">
-            <a class="btn btn-outline btn-social" href="https://github.com/shanmukha1013" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.25rem;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg> GitHub
-            </a>
-            <a class="btn btn-outline btn-social" href="https://leetcode.com/u/marellashanmukhareddy/" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.25rem;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg> LeetCode
-            </a>
-            <a class="btn btn-outline btn-social" href="https://linkedin.com/in/shanmukha-reddy-marella" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.25rem;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg> LinkedIn
-            </a>
-          </div>
-
-          <div class="contact-details" style="display: flex; flex-direction: column; gap: 1.5rem;">
-            <a href="mailto:marellashanmukhareddy@gmail.com" class="contact-item" style="display: flex; align-items: center; gap: 1rem; text-decoration: none; color: inherit; transition: var(--transition-fast);">
-              <div class="icon-box" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: var(--primary-color-dim); color: var(--primary-color); border-radius: 12px;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-              </div>
-              <div class="item-text">
-                <span class="item-label" style="display: block; font-size: 0.85rem; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">Email</span>
-                <span class="item-value" style="font-size: 1.05rem; font-weight: 500; color: var(--text-primary);">marellashanmukhareddy@gmail.com</span>
-              </div>
-            </a>
-            
-            <a href="tel:+916301098682" class="contact-item" style="display: flex; align-items: center; gap: 1rem; text-decoration: none; color: inherit; transition: var(--transition-fast);">
-              <div class="icon-box" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: var(--primary-color-dim); color: var(--primary-color); border-radius: 12px;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              </div>
-              <div class="item-text">
-                <span class="item-label" style="display: block; font-size: 0.85rem; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">Phone</span>
-                <span class="item-value" style="font-size: 1.05rem; font-weight: 500; color: var(--text-primary);">+91 6301098682</span>
-              </div>
-            </a>
-            
-            <div class="contact-item" style="display: flex; align-items: center; gap: 1rem; transition: var(--transition-fast);">
-              <div class="icon-box" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: var(--primary-color-dim); color: var(--primary-color); border-radius: 12px;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-              </div>
-              <div class="item-text">
-                <span class="item-label" style="display: block; font-size: 0.85rem; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">Location</span>
-                <span class="item-value" style="font-size: 1.05rem; font-weight: 500; color: var(--text-primary);">Hyderabad, Telangana, India</span>
-              </div>
-            </div>
+      <div style="display: grid; grid-template-columns: 1fr; gap: 4rem;">
+        
+        <!-- Contact Links -->
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; padding-bottom: 3rem; border-bottom: 1px solid var(--border-color);">
+          <a href="mailto:marellashanmukhareddy@gmail.com" class="btn btn-outline" style="display: flex; align-items: center; gap: 0.75rem; border-radius: var(--radius-sm); padding: 0.75rem 1.25rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            Email
+          </a>
+          <a href="https://linkedin.com/in/shanmukha-reddy-marella" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="display: flex; align-items: center; gap: 0.75rem; border-radius: var(--radius-sm); padding: 0.75rem 1.25rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/shanmukha1013" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="display: flex; align-items: center; gap: 0.75rem; border-radius: var(--radius-sm); padding: 0.75rem 1.25rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            GitHub
+          </a>
+          <a href="tel:+916301098682" class="btn btn-outline" style="display: flex; align-items: center; gap: 0.75rem; border-radius: var(--radius-sm); padding: 0.75rem 1.25rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +91 6301098682
+          </a>
+          <div class="btn btn-outline" style="display: flex; align-items: center; gap: 0.75rem; border-radius: var(--radius-sm); padding: 0.75rem 1.25rem; pointer-events: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            Hyderabad, India
           </div>
         </div>
 
-        <div class="contact-form-container glass-panel reveal reveal-delay-1" style="padding: 3rem;">
+        <!-- Contact Form -->
+        <div class="contact-form-container reveal" style="max-width: 600px; margin: 0 auto; width: 100%;">
           <form class="contact-form" id="contact-form" action="#" method="POST" style="display: flex; flex-direction: column; gap: 1.5rem;">
-            <div class="form-group" style="position: relative;">
-              <input type="text" id="name" required placeholder="Your Name" style="width: 100%; padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color); background: var(--surface-color); color: var(--text-primary); font-size: 1rem;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+              <input type="text" id="name" required placeholder="Name" style="width: 100%; padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color); background: var(--surface-color); color: var(--text-primary); font-size: 1rem;">
+              <input type="email" id="email" required placeholder="Email" style="width: 100%; padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color); background: var(--surface-color); color: var(--text-primary); font-size: 1rem;">
             </div>
-            <div class="form-group" style="position: relative;">
-              <input type="email" id="email" required placeholder="Your Email" style="width: 100%; padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color); background: var(--surface-color); color: var(--text-primary); font-size: 1rem;">
-            </div>
-            <div class="form-group" style="position: relative;">
-              <input type="text" id="subject" required placeholder="Subject" style="width: 100%; padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color); background: var(--surface-color); color: var(--text-primary); font-size: 1rem;">
-            </div>
-            <div class="form-group" style="position: relative;">
-              <textarea id="message" rows="5" required placeholder="Your Message" style="width: 100%; padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color); background: var(--surface-color); color: var(--text-primary); font-size: 1rem; resize: vertical;"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary w-100" style="padding: 1rem; font-size: 1.05rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; border: none; border-radius: var(--radius-sm); background: var(--primary-color); color: #fff; cursor: pointer;">
+            <input type="text" id="subject" required placeholder="Subject" style="width: 100%; padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color); background: var(--surface-color); color: var(--text-primary); font-size: 1rem;">
+            <textarea id="message" rows="5" required placeholder="Message" style="width: 100%; padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color); background: var(--surface-color); color: var(--text-primary); font-size: 1rem; resize: vertical;"></textarea>
+            
+            <button type="submit" class="btn btn-primary w-100" style="padding: 1rem; font-size: 1.05rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; border: none; border-radius: var(--radius-sm); cursor: pointer;">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg> Send Message
             </button>
             <div class="form-message" id="form-message"></div>
           </form>
         </div>
+        
       </div>
     </div>
   </section>

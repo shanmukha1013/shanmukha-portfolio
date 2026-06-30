@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ForReal | Case Study</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background: var(--bg-color); color: var(--text-primary); font-family: var(--font-primary);">
+
+  <!-- Navbar -->
+  <nav id="navbar" style="background: rgba(250, 247, 240, 0.9); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border-color); position: fixed; width: 100%; top: 0; z-index: 1000; padding: 1rem 0;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+      <a href="index.html" class="logo" style="text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+        <span style="font-family: var(--font-secondary); font-weight: 700; font-size: 1.5rem; color: var(--text-primary);">MS<span style="color: var(--primary-color);">R</span></span>
+      </a>
+      <a href="index.html" class="btn btn-outline btn-sm" style="border-radius: var(--radius-sm); padding: 0.5rem 1rem;">← Back to Home</a>
+    </div>
+  </nav>
+
+  <!-- Case Study Header -->
+  <section style="padding-top: 10rem; padding-bottom: 4rem; border-bottom: 1px solid var(--border-color);">
+    <div class="container" style="max-width: 800px; margin: 0 auto; text-align: center;">
+      <img src="images/logos/forreal.svg" alt="ForReal Logo" style="width: 80px; height: 80px; border-radius: 16px; margin-bottom: 2rem;">
+      <h1 style="font-family: var(--font-secondary); font-size: 3.5rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-primary); letter-spacing: -1px;">ForReal</h1>
+      <p style="font-size: 1.25rem; color: var(--text-secondary); margin-bottom: 2rem;">Community-driven social platform</p>
+      
+      <div style="display: flex; justify-content: center; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 3rem;">
+        <span style="background: var(--surface-color); border: 1px solid var(--border-color); color: var(--text-secondary); padding: 0.35rem 1rem; border-radius: 99px; font-size: 0.9rem;">React</span><span style="background: var(--surface-color); border: 1px solid var(--border-color); color: var(--text-secondary); padding: 0.35rem 1rem; border-radius: 99px; font-size: 0.9rem;">Node.js</span><span style="background: var(--surface-color); border: 1px solid var(--border-color); color: var(--text-secondary); padding: 0.35rem 1rem; border-radius: 99px; font-size: 0.9rem;">WebSockets</span><span style="background: var(--surface-color); border: 1px solid var(--border-color); color: var(--text-secondary); padding: 0.35rem 1rem; border-radius: 99px; font-size: 0.9rem;">MongoDB</span>
+      </div>
+
+      <div style="display: flex; justify-content: center; gap: 1rem;">
+        <a href="https://for-real-seven.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 0.75rem 1.5rem; border-radius: var(--radius-sm);">Live Project</a>
+        <a href="https://github.com/shanmukha1013/ForReal" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: 0.75rem 1.5rem; border-radius: var(--radius-sm);">Source Code</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study Content -->
+  <section style="padding: 6rem 0;">
+    <div class="container" style="max-width: 800px; margin: 0 auto;">
+      
+      <div style="margin-bottom: 5rem;">
+        <h2 style="font-family: var(--font-secondary); font-size: 2rem; margin-bottom: 1.5rem;">Architecture Overview</h2>
+        <div style="background: var(--surface-color); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 2rem; overflow-x: auto;">
+          <pre class="mermaid" style="margin: 0; display: flex; justify-content: center;">
+
+graph TD
+    Client([React Client]) --> API[Node.js / Express]
+    Client <-->|WebSockets| SocketIO[Socket.io Server]
+    API --> DB[(MongoDB)]
+    SocketIO --> DB
+
+          </pre>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr; gap: 4rem;">
+        <div>
+          <h2 style="font-family: var(--font-secondary); font-size: 2rem; margin-bottom: 1.5rem;">The Problem</h2>
+          <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary);">Modern social platforms prioritize infinite scrolling and superficial engagement over authentic, real-time conversations.</p>
+        </div>
+        
+        <div>
+          <h2 style="font-family: var(--font-secondary); font-size: 2rem; margin-bottom: 1.5rem;">The Solution</h2>
+          <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary);">A dedicated social platform designed around private communities and real-time WebSocket interactions to foster deeper discussions.</p>
+        </div>
+
+        <div>
+          <h2 style="font-family: var(--font-secondary); font-size: 2rem; margin-bottom: 1.5rem;">Key Metrics & Lessons</h2>
+          <div style="background: var(--surface-color); border-left: 4px solid var(--primary-color); padding: 1.5rem; border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-primary); margin: 0; font-weight: 500;">Maintained ultra-low latency (<50ms) for real-time messaging using Socket.io. Scalable database schema supporting threaded conversations.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="padding: 4rem 0 2rem; border-top: 1px solid var(--border-color); background-color: var(--surface-color); text-align: center;">
+    <div class="container">
+      <h3 style="font-size: 1.25rem; color: var(--text-primary); margin-bottom: 0.5rem; font-weight: 600;">Marella Shanmukha Reddy</h3>
+      <p style="color: var(--text-tertiary); font-size: 0.9rem;">&copy; 2026. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Mermaid JS for diagrams -->
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'base', themeVariables: { primaryColor: '#F2EFE8', primaryTextColor: '#111827', primaryBorderColor: '#e5e7eb', lineColor: '#556B2F' } });
+  </script>
+</body>
+</html>
