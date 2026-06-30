@@ -4,22 +4,22 @@
   --surface-color-light: #F2EFE8;
   --primary-color: #556B2F;
   --primary-color-hover: #3D4D24;
-  --primary-color-dim: rgba(85, 107, 47, 0.15);
-  --text-primary: #1F2937;
-  --text-secondary: #5B6472;
-  --text-tertiary: #9ca3af;
-  --border-color: #E5E2D8;
+  --primary-color-dim: rgba(85, 107, 47, 0.12);
+  --text-primary: #111827;
+  --text-secondary: #374151;
+  --text-tertiary: #6b7280;
+  --border-color: #e5e7eb;
   
-  --font-primary: 'Inter', sans-serif;
-  --font-secondary: 'Space Grotesk', sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-secondary: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
   
-  --transition-fast: 0.2s ease;
-  --transition-normal: 0.3s ease;
-  --transition-slow: 0.5s ease;
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   
   --radius-sm: 8px;
-  --radius-md: 12px;
+  --radius-md: 16px;
   --radius-lg: 24px;
 }
 

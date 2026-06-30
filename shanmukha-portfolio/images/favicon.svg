@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="30" height="30" x="1" y="1" rx="7" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
-  <text x="16" y="16.5" font-family="'Space Grotesk', -apple-system, sans-serif" font-weight="800" font-size="10.5" fill="#f97316" text-anchor="middle" dominant-baseline="middle" letter-spacing="-0.04em">MSR</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <rect width="200" height="200" rx="40" fill="#FAF7F0"/>
+  <text x="100" y="125" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="80" font-weight="900" fill="#556B2F" text-anchor="middle" letter-spacing="-2">MSR</text>
+  <circle cx="165" cy="120" r="8" fill="#3D4D24"/>
 </svg>
