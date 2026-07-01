@@ -2421,9 +2421,7 @@ nav.scrolled {
   font-family: var(--font-mono);
 }
 
-.stat-badge {
-  font-size: 1.25rem;
-}
+
 
 .stat-label {
   font-size: 0.85rem;
