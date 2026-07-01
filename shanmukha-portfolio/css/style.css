@@ -2310,10 +2310,11 @@ nav.scrolled {
   width: 100%;
   height: 100%;
   background-image: 
-    linear-gradient(rgba(85, 107, 47, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(85, 107, 47, 0.05) 1px, transparent 1px);
-  background-size: 40px 40px;
-  background-position: center center;
+    radial-gradient(circle at 1px 1px, rgba(85, 107, 47, 0.15) 1.5px, transparent 1.5px),
+    linear-gradient(rgba(85, 107, 47, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(85, 107, 47, 0.07) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: 0 0;
   z-index: 0;
   pointer-events: none;
 }
@@ -2325,7 +2326,7 @@ nav.scrolled {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at center, transparent 0%, var(--bg-color) 80%);
+  background: radial-gradient(circle at center, transparent 20%, var(--bg-color) 90%);
 }
 
 .hero-container {
