@@ -3047,3 +3047,114 @@ body::before {
   }
 }
 
+
+/* Journey V2 CSS */
+.timeline-v2 {
+  position: relative;
+  padding-left: 40px;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.timeline-v2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 19px; /* Centered relative to the 40px icon */
+  width: 2px;
+  background: var(--primary-color);
+  opacity: 0.3;
+}
+
+.timeline-item-v2 {
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.timeline-item-v2:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-icon-v2 {
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--surface-color);
+  border: 2px solid var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: 0 0 0 8px var(--bg-color); /* To cut out the vertical line behind the icon */
+}
+
+.timeline-icon-v2 i {
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+
+.timeline-content-v2 {
+  padding-left: 2rem;
+  padding-top: 0.35rem; /* Align perfectly with the icon */
+}
+
+.timeline-year-v2 {
+  display: inline-block;
+  font-size: 0.95rem;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.timeline-title-v2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 1rem 0;
+  font-family: var(--font-secondary);
+  letter-spacing: -0.5px;
+}
+
+.timeline-desc-v2 {
+  font-size: 1.15rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin: 0;
+}
+
+.journey-quote {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  font-style: italic;
+  margin-top: 8rem;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 768px) {
+  .timeline-v2 {
+    padding-left: 30px;
+  }
+  .timeline-v2::before {
+    left: 14px;
+  }
+  .timeline-icon-v2 {
+    left: -30px;
+    width: 30px;
+    height: 30px;
+  }
+  .timeline-icon-v2 i {
+    font-size: 0.8rem;
+  }
+  .timeline-content-v2 {
+    padding-left: 1.5rem;
+  }
+}
