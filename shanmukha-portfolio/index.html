@@ -127,50 +127,61 @@
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <div class="container">
+    <!-- About Section -->
+  <section id="about" class="section" style="padding-top: 8rem; padding-bottom: 8rem;">
+    <div class="container" style="max-width: 850px; margin: 0 auto;">
       <div class="section-header reveal">
-        <h2 class="section-title">About <span class="highlight">Me</span></h2>
-        <div class="section-divider"></div>
+        <h2 class="section-title" style="text-align: left; margin-bottom: 0;">About <span class="highlight">Me</span></h2>
       </div>
       
-      <div class="about-grid" style="display: grid; grid-template-columns: 1fr; gap: 4rem; margin-top: 2rem;">
-        <div class="about-text glass-panel reveal" style="padding: 3rem; border-radius: var(--radius-lg);">
-          <h3 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--text-primary);">Professional Introduction</h3>
-          <p style="font-size: 1.15rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
-            I am a Computer Science undergraduate passionate about designing intelligent software powered by Artificial Intelligence, Machine Learning, Data Engineering and modern Full Stack Development.
-          </p>
-          <p style="font-size: 1.15rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 3rem;">
-            I enjoy transforming ambitious ideas into scalable products while continuously learning production software engineering and machine learning systems.
-          </p>
+      <div class="about-content reveal" style="margin-top: 3rem;">
+        <p style="font-size: 1.25rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 4rem;">
+          I'm a Computer Science undergraduate who enjoys building software where Artificial Intelligence, Machine Learning, and Software Engineering come together. I focus on creating scalable, reliable, and intelligent products that solve meaningful real-world problems.
+        </p>
 
-          <h4 style="font-size: 1.2rem; color: var(--text-primary); margin-bottom: 1.5rem;">Current Focus</h4>
-          <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
-            <span style="padding: 0.5rem 1.25rem; background: var(--primary-color-dim); color: var(--primary-color); border-radius: 99px; font-weight: 500; font-size: 0.95rem;">Artificial Intelligence</span>
-            <span style="padding: 0.5rem 1.25rem; background: var(--primary-color-dim); color: var(--primary-color); border-radius: 99px; font-weight: 500; font-size: 0.95rem;">Machine Learning</span>
-            <span style="padding: 0.5rem 1.25rem; background: var(--primary-color-dim); color: var(--primary-color); border-radius: 99px; font-weight: 500; font-size: 0.95rem;">Production ML</span>
-            <span style="padding: 0.5rem 1.25rem; background: var(--primary-color-dim); color: var(--primary-color); border-radius: 99px; font-weight: 500; font-size: 0.95rem;">Data Analytics</span>
-            <span style="padding: 0.5rem 1.25rem; background: var(--primary-color-dim); color: var(--primary-color); border-radius: 99px; font-weight: 500; font-size: 0.95rem;">Full Stack Development</span>
-            <span style="padding: 0.5rem 1.25rem; background: var(--primary-color-dim); color: var(--primary-color); border-radius: 99px; font-weight: 500; font-size: 0.95rem;">System Design</span>
+        <h3 style="font-size: 1.75rem; font-family: var(--font-secondary); font-weight: 600; color: var(--text-primary); margin-bottom: 1.5rem;">Engineering Philosophy</h3>
+        <p style="font-size: 1.15rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 5rem;">
+          I believe great software isn't measured by the number of features it has, but by how effectively it solves real problems. Every project I build emphasizes clean architecture, scalability, reliability, and long-term maintainability.
+        </p>
+
+        <div class="about-cards" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-bottom: 6rem;">
+          <!-- Card 1 -->
+          <div class="about-card" style="padding: 2.5rem; background: var(--surface-color); border: 1px solid var(--border-color); border-radius: var(--radius-md); transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;">
+            <i class="fas fa-brain" style="font-size: 1.75rem; color: var(--primary-color); margin-bottom: 1.5rem;"></i>
+            <h4 style="font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 1rem;">AI Engineering</h4>
+            <p style="font-size: 1rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">Building intelligent applications powered by modern AI systems, LLMs, and AI workflows.</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="about-card" style="padding: 2.5rem; background: var(--surface-color); border: 1px solid var(--border-color); border-radius: var(--radius-md); transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;">
+            <i class="fas fa-network-wired" style="font-size: 1.75rem; color: var(--primary-color); margin-bottom: 1.5rem;"></i>
+            <h4 style="font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 1rem;">Machine Learning</h4>
+            <p style="font-size: 1rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">Developing production-ready ML models, optimization pipelines, and reliable inference systems.</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="about-card" style="padding: 2.5rem; background: var(--surface-color); border: 1px solid var(--border-color); border-radius: var(--radius-md); transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;">
+            <i class="fas fa-code-branch" style="font-size: 1.75rem; color: var(--primary-color); margin-bottom: 1.5rem;"></i>
+            <h4 style="font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 1rem;">Software Engineering</h4>
+            <p style="font-size: 1rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">Building scalable backend services, APIs, and modern full-stack applications with clean architecture.</p>
+          </div>
+          <!-- Card 4 -->
+          <div class="about-card" style="padding: 2.5rem; background: var(--surface-color); border: 1px solid var(--border-color); border-radius: var(--radius-md); transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;">
+            <i class="fas fa-book-reader" style="font-size: 1.75rem; color: var(--primary-color); margin-bottom: 1.5rem;"></i>
+            <h4 style="font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 1rem;">Currently Learning</h4>
+            <ul style="list-style: none; padding: 0; margin: 0; font-size: 1rem; color: var(--text-secondary); line-height: 1.8;">
+              <li style="display: flex; align-items: center; gap: 0.5rem;"><span style="color: var(--primary-color); font-size: 0.5rem;">●</span> Production Machine Learning</li>
+              <li style="display: flex; align-items: center; gap: 0.5rem;"><span style="color: var(--primary-color); font-size: 0.5rem;">●</span> Distributed Systems</li>
+              <li style="display: flex; align-items: center; gap: 0.5rem;"><span style="color: var(--primary-color); font-size: 0.5rem;">●</span> System Design</li>
+              <li style="display: flex; align-items: center; gap: 0.5rem;"><span style="color: var(--primary-color); font-size: 0.5rem;">●</span> RAG Reliability</li>
+            </ul>
           </div>
         </div>
-      </div>
 
-      <!-- Engineering Philosophy -->
-      <div class="engineering-philosophy reveal" style="margin-top: 10rem; margin-bottom: 4rem; text-align: center;">
-        <h2 style="font-size: clamp(3rem, 6vw, 5rem); font-weight: 800; line-height: 1.1; color: var(--text-primary); letter-spacing: -1.5px; margin-bottom: 2.5rem;">
-          Simple.<br>
-          <span style="color: var(--primary-color);">Scalable.</span><br>
-          Maintainable.
-        </h2>
-        <p style="font-size: 1.25rem; max-width: 800px; margin: 0 auto; color: var(--text-secondary); line-height: 1.8;">
-          Every product I build focuses on solving meaningful problems through clean architecture, scalable systems, and thoughtful engineering instead of unnecessary complexity.
-        </p>
+        <div class="personal-brand-statement reveal" style="text-align: center; margin-top: 4rem;">
+          <p style="font-size: 1.5rem; font-weight: 500; color: var(--primary-color); letter-spacing: 0.02em; margin: 0;">Where Ideas Become Products.</p>
+        </div>
       </div>
     </div>
   </section>
-
 
   <!-- Skills Section -->
   <section id="skills" class="section">
