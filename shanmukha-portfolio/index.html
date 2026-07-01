@@ -626,63 +626,27 @@
     </div>
   </section>
 
-      <!-- Contact Section -->
+        <!-- Contact Section -->
   <section id="contact" class="section" style="padding-top: 6rem; padding-bottom: 6rem;">
     <div class="container" style="max-width: 1100px; margin: 0 auto;">
-      <div class="contact-grid-v3">
+      <div class="contact-grid-v4">
         
         <!-- Left Column -->
-        <div class="contact-left-v3 reveal">
-          <h2 class="contact-heading-v3">Let's Build Something Together.</h2>
-          <p class="contact-text-v3">
-            Have an idea, an opportunity, or simply want to connect? I'd love to hear from you. Whether it's AI, Machine Learning, software engineering, product ideas, or collaboration, let's start a conversation.
+        <div class="contact-left-v4 reveal">
+          <h2 class="contact-heading-v4">Let's Build Something <span class="highlight">Together.</span></h2>
+          <p class="contact-text-v4">
+            Whether you're looking for an AI Engineer, have an exciting product idea, or simply want to connect, I'd love to hear from you.
           </p>
-          <div class="contact-brand-v3">
+          <p class="contact-text-v4">
+            I'm always happy to discuss Artificial Intelligence, Machine Learning, Software Engineering, startups, hackathons, internships, or exciting opportunities.
+          </p>
+          <div class="contact-brand-v4">
             Where Ideas Become Products.
-          </div>
-          
-          <div class="contact-links-v3">
-            <a href="mailto:marellashanmukhareddy@gmail.com" class="contact-row-v3" target="_blank" rel="noopener noreferrer">
-              <div class="contact-row-icon-v3"><i class="fas fa-envelope"></i></div>
-              <div class="contact-row-label-v3">Email</div>
-              <div class="contact-row-value-v3">marellashanmukhareddy@gmail.com</div>
-              <div class="contact-row-arrow-v3"><i class="fas fa-arrow-right"></i></div>
-            </a>
-            <a href="https://github.com/shanmukha1013" class="contact-row-v3" target="_blank" rel="noopener noreferrer">
-              <div class="contact-row-icon-v3"><i class="devicon-github-original"></i></div>
-              <div class="contact-row-label-v3">GitHub</div>
-              <div class="contact-row-value-v3">@shanmukha1013</div>
-              <div class="contact-row-arrow-v3"><i class="fas fa-arrow-right"></i></div>
-            </a>
-            <a href="https://linkedin.com/in/shanmukha-reddy-marella" class="contact-row-v3" target="_blank" rel="noopener noreferrer">
-              <div class="contact-row-icon-v3"><i class="fab fa-linkedin-in"></i></div>
-              <div class="contact-row-label-v3">LinkedIn</div>
-              <div class="contact-row-value-v3">Shanmukha Reddy Marella</div>
-              <div class="contact-row-arrow-v3"><i class="fas fa-arrow-right"></i></div>
-            </a>
-            <a href="https://www.kaggle.com/shanmukhreddy2005" class="contact-row-v3" target="_blank" rel="noopener noreferrer">
-              <div class="contact-row-icon-v3"><i class="fab fa-kaggle"></i></div>
-              <div class="contact-row-label-v3">Kaggle</div>
-              <div class="contact-row-value-v3">@shanmukhreddy2005</div>
-              <div class="contact-row-arrow-v3"><i class="fas fa-arrow-right"></i></div>
-            </a>
-            <a href="Marella_Shanmukha_Reddy_Resume.pdf" class="contact-row-v3" target="_blank" rel="noopener noreferrer">
-              <div class="contact-row-icon-v3"><i class="fas fa-file-alt"></i></div>
-              <div class="contact-row-label-v3">Resume</div>
-              <div class="contact-row-value-v3">View Document</div>
-              <div class="contact-row-arrow-v3"><i class="fas fa-download"></i></div>
-            </a>
-            <div class="contact-row-v3" style="cursor: default;">
-              <div class="contact-row-icon-v3"><i class="fas fa-map-marker-alt"></i></div>
-              <div class="contact-row-label-v3">Location</div>
-              <div class="contact-row-value-v3">Hyderabad, India</div>
-              <div class="contact-row-arrow-v3" style="opacity: 0;"></div>
-            </div>
           </div>
         </div>
 
-        <!-- Right Column -->
-        <div class="contact-right-v3 reveal">
+        <!-- Right Column (Form Container) -->
+        <div class="contact-right-v4 reveal" id="contact-form-container">
           <form class="contact-form-v3" id="contact-form" action="#" method="POST">
             <div class="form-row-v3">
               <div class="form-group-v3">
@@ -709,18 +673,33 @@
             </button>
             <div class="form-message" id="form-message" style="margin-top: 1rem; text-align: center; font-size: 0.95rem; font-weight: 500;"></div>
           </form>
+
+          <!-- Success Card (Hidden by default) -->
+          <div class="success-card-v4" id="success-card" style="display: none; opacity: 0; transition: opacity 0.5s ease;">
+            <div class="success-icon-v4"><i class="fas fa-check"></i></div>
+            <h3 class="success-title-v4">Message Sent!</h3>
+            <p class="success-text-v4">
+              Thanks for reaching out.<br><br>
+              I've received your message and I'll get back to you as soon as possible.<br><br>
+              Have a great day!
+            </p>
+          </div>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer-v3">
-    <div class="footer-divider-v3"></div>
-    <div class="container text-center" style="padding: 2.5rem 0;">
-      <div class="footer-brand-v3">Where Ideas Become Products.</div>
-      <div class="footer-copy-v3">© 2026 Marella Shanmukha Reddy<br>Built with Next.js, React & ❤️</div>
+  <!-- Minimal Footer -->
+  <footer class="footer-v4">
+    <div class="container text-center">
+      <p class="footer-copy-v4">© 2026 Marella Shanmukha Reddy</p>
+      <div class="footer-links-v4">
+        <a href="https://github.com/shanmukha1013" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <span class="footer-dot-v4">•</span>
+        <a href="https://linkedin.com/in/shanmukha-reddy-marella" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+      <p class="footer-credit-v4">Built with React • Designed & Developed by MSR</p>
     </div>
   </footer>
 

@@ -243,14 +243,27 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('[EmailJS] sendResult:', sendResult);
 
 
-        contactForm.reset();
-        showMessage('Message sent successfully. I will get back to you soon.', 'success');
-
-
-        setTimeout(() => {
-          formMessage.textContent = '';
-          formMessage.className = 'form-message';
-        }, 5000);
+                contactForm.reset();
+        
+        // V4 Success Animation
+        const successCard = document.getElementById('success-card');
+        if (successCard) {
+          contactForm.style.transition = 'opacity 0.4s ease';
+          contactForm.style.opacity = '0';
+          setTimeout(() => {
+            contactForm.style.display = 'none';
+            successCard.style.display = 'flex';
+            // Trigger reflow
+            void successCard.offsetWidth;
+            successCard.style.opacity = '1';
+          }, 400);
+        } else {
+          showMessage('Message sent successfully. I will get back to you soon.', 'success');
+          setTimeout(() => {
+            formMessage.textContent = '';
+            formMessage.className = 'form-message';
+          }, 5000);
+        }
 
       } catch (err) {
         console.error('[EmailJS] send error:', err);

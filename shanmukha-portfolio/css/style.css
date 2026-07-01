@@ -3519,3 +3519,140 @@ a.contact-row-v3:hover .contact-row-arrow-v3 {
     grid-template-columns: 1fr;
   }
 }
+
+/* Contact V4 CSS */
+.contact-grid-v4 {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  gap: 4rem;
+  align-items: center; /* Center to match the lack of links */
+}
+
+.contact-left-v4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-heading-v4 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.contact-text-v4 {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.contact-brand-v4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  font-style: italic;
+  margin-top: 1rem;
+  letter-spacing: 0.02em;
+}
+
+/* Success Card V4 */
+.success-card-v4 {
+  background: var(--bg-color);
+  padding: 4rem 3rem;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.success-icon-v4 {
+  width: 60px;
+  height: 60px;
+  background-color: var(--surface-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.success-icon-v4 i {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+.success-title-v4 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.success-text-v4 {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Minimal Footer V4 */
+.footer-v4 {
+  padding: 3rem 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-copy-v4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 0.75rem 0;
+}
+
+.footer-links-v4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.footer-links-v4 a {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links-v4 a:hover {
+  color: var(--primary-color);
+}
+
+.footer-dot-v4 {
+  color: var(--text-tertiary);
+  font-size: 0.8rem;
+}
+
+.footer-credit-v4 {
+  font-size: 0.85rem;
+  color: var(--text-tertiary);
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .contact-grid-v4 {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .contact-heading-v4 {
+    font-size: 3rem;
+  }
+}
