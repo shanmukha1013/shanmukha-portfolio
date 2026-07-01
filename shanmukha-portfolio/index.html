@@ -68,42 +68,58 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero-section" aria-label="Hero section" style="padding-top: 10rem; padding-bottom: 6rem; display: flex; align-items: center; min-height: 100vh;">
+    <!-- Hero Section -->
+  <section id="hero" class="hero-section" aria-label="Hero section">
+    <div class="hero-background-grid"></div>
     <div class="container hero-container">
-      <div class="hero-content reveal">
-        <div style="font-size: 1.25rem; color: var(--text-secondary); margin-bottom: 0.5rem; font-family: var(--font-secondary);">Hi, I'm</div>
+      <div class="hero-content">
+        <div class="hero-greeting animate-1">Hi, I'm</div>
         
-        <h1 class="hero-title" style="font-size: clamp(3rem, 6vw, 4.5rem); line-height: 1.1; letter-spacing: -1px; margin-bottom: 2.5rem; color: var(--text-primary); font-weight: 700;">
-          Marella Shanmukha Reddy
-</h1>
+        <h1 class="hero-title animate-2">
+          <span class="name-primary">Marella</span><br>
+          <span class="name-accent">Shanmukha Reddy</span>
+        </h1>
 
-        <div class="hero-roles" style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 2.5rem; font-family: var(--font-mono); font-size: 1.1rem; color: var(--text-secondary);">
-          <span style="color: var(--primary-color); font-weight: 600;">AI Engineer</span>
-          <span>Machine Learning Engineer</span>
-          <span>Data Engineer</span>
-          <span>Full Stack Developer</span>
+        <div class="hero-typing-container animate-3">
+          <span id="typing-text" class="typing-text"></span><span class="typing-cursor">|</span>
         </div>
 
-        <p class="hero-description" style="font-size: 1.15rem; max-width: 500px; margin-bottom: 3.5rem; color: var(--text-secondary); line-height: 1.6;">
-          Building production AI systems,<br>
-          machine learning infrastructure,<br>
-          and intelligent software products.
+        <p class="hero-description animate-4">
+          Computer Science undergraduate passionate about building intelligent software, production ML infrastructure, and AI-powered products that solve real-world problems.
         </p>
 
-        <div class="hero-cta" style="display: flex; gap: 1rem; align-items: center;">
-          <a href="#projects" class="btn btn-primary" style="padding: 0.85rem 1.75rem; font-size: 1rem; border-radius: var(--radius-sm);">
-            Explore Projects
-          </a>
-          <a href="./marellashanmukharedresume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: 0.85rem 1.75rem; font-size: 1rem; border-radius: var(--radius-sm);">
-            Resume
-          </a>
+        <div class="hero-brand-line animate-5">Where Ideas Become Products.</div>
+
+        <div class="hero-cta animate-6">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="https://github.com/shanmukha1013" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub</a>
+          <a href="./marellashanmukharedresume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Resume</a>
+        </div>
+
+        <div class="hero-stats animate-7">
+          <div class="stat-item">
+            <span class="stat-number">7+</span>
+            <span class="stat-label">Products Built</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">20+</span>
+            <span class="stat-label">Repositories</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">35+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number stat-badge" style="color: var(--primary-color);">Open To Work</span>
+            <span class="stat-label">AI & ML Roles</span>
+          </div>
         </div>
       </div>
 
-      <div class="hero-visual reveal reveal-delay-1" style="display: flex; justify-content: flex-end;">
-        <div class="image-wrapper" style="width: 100%; max-width: 450px; border-radius: 24px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); overflow: hidden;">
-          <img src="images/mesangi.jpg" alt="Marella Shanmukha Reddy" class="profile-img" loading="eager" fetchpriority="high" style="width: 100%; height: auto; display: block; border-radius: 24px;">
+      <div class="hero-visual animate-8">
+        <div class="blueprint-ring"></div>
+        <div class="image-wrapper">
+          <img src="images/mesangi.jpg" alt="Marella Shanmukha Reddy" class="profile-img" loading="eager" fetchpriority="high">
         </div>
       </div>
     </div>
@@ -679,5 +695,60 @@
   <!-- Scripts -->
   <script src="js/main.js"></script>
 
+
+  <!-- Typing Animation -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const phrases = [
+        "Building Production AI Systems",
+        "Designing ML Infrastructure",
+        "Engineering Intelligent Products",
+        "Creating AI-Powered Applications",
+        "Building Software That Scales"
+      ];
+      
+      const typingTextElement = document.getElementById("typing-text");
+      const cursorElement = document.querySelector(".typing-cursor");
+      
+      let currentPhraseIndex = 0;
+      let currentCharIndex = 0;
+      let isDeleting = false;
+      let isTypingStarted = false;
+      
+      // Wait for intro animation to finish before starting typing
+      setTimeout(() => {
+        isTypingStarted = true;
+        type();
+      }, 1500);
+
+      function type() {
+        if (!isTypingStarted || !typingTextElement) return;
+
+        const currentPhrase = phrases[currentPhraseIndex];
+        
+        if (isDeleting) {
+          currentCharIndex--;
+        } else {
+          currentCharIndex++;
+        }
+        
+        typingTextElement.textContent = currentPhrase.substring(0, currentCharIndex);
+        
+        let typeSpeed = isDeleting ? 30 : 60; // Erase faster, type premium speed
+        
+        if (!isDeleting && currentCharIndex === currentPhrase.length) {
+          // Pause at end of phrase
+          typeSpeed = 2000;
+          isDeleting = true;
+        } else if (isDeleting && currentCharIndex === 0) {
+          isDeleting = false;
+          currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+          typeSpeed = 500; // Pause before typing new phrase
+        }
+        
+        setTimeout(type, typeSpeed);
+      }
+    });
+  </script>
 </body>
 </html>
