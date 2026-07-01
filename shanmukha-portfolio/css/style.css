@@ -3158,3 +3158,124 @@ body::before {
     padding-left: 1.5rem;
   }
 }
+
+/* Contact V2 CSS */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  gap: 5rem;
+  align-items: center;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-heading {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.contact-text {
+  font-size: 1.15rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+}
+
+.contact-brand {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  font-style: italic;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.02em;
+}
+
+.contact-btn {
+  align-self: flex-start;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  border-radius: 99px;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  border: 1px solid var(--primary-color);
+  font-weight: 600;
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a.contact-row:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary-color);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+.contact-row-icon {
+  width: 42px;
+  height: 42px;
+  background: var(--bg-color);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.contact-row-icon i {
+  color: var(--primary-color);
+  font-size: 1.15rem;
+}
+
+.contact-row-label {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  width: 100px;
+}
+
+.contact-row-value {
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 992px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  .contact-heading {
+    font-size: 3rem;
+  }
+  .contact-row-label {
+    width: 80px;
+  }
+}
