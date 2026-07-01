@@ -267,131 +267,200 @@
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
-        <div class="section-divider"></div>
+    <!-- Projects Section -->
+  <section id="projects" class="section" style="padding-top: 8rem; padding-bottom: 8rem;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto;">
+      
+      <!-- Products I've Built Section -->
+      <div class="section-header reveal" style="text-align: left; margin-bottom: 4rem;">
+        <h2 class="section-title" style="margin-bottom: 0.5rem; font-size: 2.5rem;">🚀 Products I've <span class="highlight">Built</span></h2>
+        <p style="font-size: 1.15rem; color: var(--text-secondary); max-width: 600px;">Deployed user-facing applications and scalable platforms.</p>
       </div>
 
-      <div class="projects-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;" role="list" aria-label="Featured projects">
-        <div class="project-card reveal" role="listitem" style="padding: 2rem; border-radius: var(--radius-lg); background: var(--surface-color); border: 1px solid var(--border-color); display: flex; flex-direction: column;">
-          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem;">
-            <img src="images/logos/punchstart.svg" alt="PunchStart Logo" style="width: 48px; height: 48px; border-radius: 12px;">
-            <h3 style="font-size: 1.5rem; color: var(--text-primary); margin: 0; font-weight: 700;">PunchStart</h3>
+      <div class="projects-grid reveal">
+        <!-- PunchStart -->
+        <div class="product-card">
+          <div class="product-header">
+            <img src="images/logos/punchstart.svg" alt="PunchStart" class="product-logo">
+            <div class="product-title-wrapper">
+              <h3 class="product-title">PunchStart</h3>
+              <span class="product-category">AI Startup Validation Platform</span>
+            </div>
+            <div class="product-status status-live"><span class="status-dot">●</span> Live</div>
           </div>
-          <p style="color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 1.5rem; line-height: 1.6;">
-            AI-powered startup validation platform that analyzes ideas, competitors, and market strategies.
+          <p class="product-description">
+            Got a startup idea? PunchStart helps you validate it before you start building. Simply describe your idea and the platform generates competitor analysis, target audience insights, business models, market research, revenue strategies, risks, and an execution roadmap powered by AI.
           </p>
-          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2.5rem;">
-            <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Next.js</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">FastAPI</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Gemini AI</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">MongoDB</span>
+          <div class="product-tech">
+            <span class="tech-badge">Next.js</span>
+            <span class="tech-badge">FastAPI</span>
+            <span class="tech-badge">Gemini AI</span>
+            <span class="tech-badge">MongoDB</span>
           </div>
-          <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center;">
-            <span style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--text-tertiary);"><span style="color: #22c55e;">●</span> Live</span>
-            <a href="punchstart.html" class="btn btn-primary btn-sm" style="border-radius: var(--radius-sm); padding: 0.5rem 1.25rem;">Case Study</a>
+          <div class="product-actions">
+            <a href="https://start-punch.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">↗ Launch Application</a>
+            <a href="https://github.com/shanmukha1013/punchstart-ai" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm"><> GitHub Repository</a>
           </div>
         </div>
-        <div class="project-card reveal" role="listitem" style="padding: 2rem; border-radius: var(--radius-lg); background: var(--surface-color); border: 1px solid var(--border-color); display: flex; flex-direction: column;">
-          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem;">
-            <img src="images/logos/forreal.svg" alt="ForReal Logo" style="width: 48px; height: 48px; border-radius: 12px;">
-            <h3 style="font-size: 1.5rem; color: var(--text-primary); margin: 0; font-weight: 700;">ForReal</h3>
+
+        <!-- ForReal -->
+        <div class="product-card">
+          <div class="product-header">
+            <img src="images/logos/forreal.svg" alt="ForReal" class="product-logo">
+            <div class="product-title-wrapper">
+              <h3 class="product-title">ForReal</h3>
+              <span class="product-category">Community Discussion Platform</span>
+            </div>
+            <div class="product-status status-live"><span class="status-dot">●</span> Live</div>
           </div>
-          <p style="color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 1.5rem; line-height: 1.6;">
-            Community-driven social platform designed for meaningful discussions and private communities.
+          <p class="product-description">
+            Create communities, share posts, start discussions, follow people, and connect through meaningful conversations without the clutter of traditional social media.
           </p>
-          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2.5rem;">
-            <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">React</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Node.js</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">WebSockets</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">MongoDB</span>
+          <div class="product-tech">
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">Node.js</span>
+            <span class="tech-badge">WebSockets</span>
+            <span class="tech-badge">MongoDB</span>
           </div>
-          <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center;">
-            <span style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--text-tertiary);"><span style="color: #22c55e;">●</span> Live</span>
-            <a href="forreal.html" class="btn btn-primary btn-sm" style="border-radius: var(--radius-sm); padding: 0.5rem 1.25rem;">Case Study</a>
+          <div class="product-actions">
+            <a href="https://for-real-seven.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">↗ Launch Application</a>
+            <a href="https://github.com/shanmukha1013/ForReal" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm"><> GitHub Repository</a>
           </div>
         </div>
-        <div class="project-card reveal" role="listitem" style="padding: 2rem; border-radius: var(--radius-lg); background: var(--surface-color); border: 1px solid var(--border-color); display: flex; flex-direction: column;">
-          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem;">
-            <img src="images/logos/flexy.svg" alt="Flexy Logo" style="width: 48px; height: 48px; border-radius: 12px;">
-            <h3 style="font-size: 1.5rem; color: var(--text-primary); margin: 0; font-weight: 700;">Flexy</h3>
+
+        <!-- Flexy -->
+        <div class="product-card">
+          <div class="product-header">
+            <img src="images/logos/flexy.svg" alt="Flexy" class="product-logo">
+            <div class="product-title-wrapper">
+              <h3 class="product-title">Flexy</h3>
+              <span class="product-category">Marketplace for Collectors</span>
+            </div>
+            <div class="product-status status-live"><span class="status-dot">●</span> Live</div>
           </div>
-          <p style="color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 1.5rem; line-height: 1.6;">
-            Full-stack e-commerce marketplace with real-time inventory and secure payment processing.
+          <p class="product-description">
+            Showcase your collections, discover rare collectibles, buy and sell items, join collector communities, and connect with people who share the same passion.
           </p>
-          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2.5rem;">
-            <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">React</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Express</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Stripe</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">PostgreSQL</span>
+          <div class="product-tech">
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">Express</span>
+            <span class="tech-badge">Stripe</span>
+            <span class="tech-badge">PostgreSQL</span>
           </div>
-          <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center;">
-            <span style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--text-tertiary);"><span style="color: #22c55e;">●</span> Live</span>
-            <a href="flexy.html" class="btn btn-primary btn-sm" style="border-radius: var(--radius-sm); padding: 0.5rem 1.25rem;">Case Study</a>
+          <div class="product-actions">
+            <a href="https://flexy-peach.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">↗ Launch Application</a>
+            <a href="https://github.com/shanmukha1013/Flexy" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm"><> GitHub Repository</a>
           </div>
         </div>
-        <div class="project-card reveal" role="listitem" style="padding: 2rem; border-radius: var(--radius-lg); background: var(--surface-color); border: 1px solid var(--border-color); display: flex; flex-direction: column;">
-          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem;">
-            <img src="images/logos/sidekick.svg" alt="SideKick Logo" style="width: 48px; height: 48px; border-radius: 12px;">
-            <h3 style="font-size: 1.5rem; color: var(--text-primary); margin: 0; font-weight: 700;">SideKick</h3>
+
+        <!-- SideKick -->
+        <div class="product-card">
+          <div class="product-header">
+            <img src="images/logos/sidekick.svg" alt="SideKick" class="product-logo">
+            <div class="product-title-wrapper">
+              <h3 class="product-title">SideKick</h3>
+              <span class="product-category">Part-Time Job Platform</span>
+            </div>
+            <div class="product-status status-live"><span class="status-dot">●</span> Live</div>
           </div>
-          <p style="color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 1.5rem; line-height: 1.6;">
-            Comprehensive job application tracking system with automated resume parsing.
+          <p class="product-description">
+            Need help getting something done or looking for part-time work? SideKick lets users post part-time jobs, find people to complete them, or apply for jobs that match their skills—all in one simple platform.
           </p>
-          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2.5rem;">
-            <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Vue.js</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Django</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">PostgreSQL</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Redis</span>
+          <div class="product-tech">
+            <span class="tech-badge">Vue.js</span>
+            <span class="tech-badge">Django</span>
+            <span class="tech-badge">PostgreSQL</span>
+            <span class="tech-badge">Redis</span>
           </div>
-          <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center;">
-            <span style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--text-tertiary);"><span style="color: #22c55e;">●</span> Live</span>
-            <a href="sidekick.html" class="btn btn-primary btn-sm" style="border-radius: var(--radius-sm); padding: 0.5rem 1.25rem;">Case Study</a>
-          </div>
-        </div>
-        <div class="project-card reveal" role="listitem" style="padding: 2rem; border-radius: var(--radius-lg); background: var(--surface-color); border: 1px solid var(--border-color); display: flex; flex-direction: column;">
-          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem;">
-            <img src="images/logos/featurestore.svg" alt="Feature Store Engine Logo" style="width: 48px; height: 48px; border-radius: 12px;">
-            <h3 style="font-size: 1.5rem; color: var(--text-primary); margin: 0; font-weight: 700;">Feature Store Engine</h3>
-          </div>
-          <p style="color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 1.5rem; line-height: 1.6;">
-            Scalable ML feature store for real-time model serving and offline batch training.
-          </p>
-          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2.5rem;">
-            <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Python</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Redis</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Apache Kafka</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Docker</span>
-          </div>
-          <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center;">
-            <span style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--text-tertiary);"><span style="color: #f59e0b;">●</span> Development</span>
-            <a href="featurestore.html" class="btn btn-primary btn-sm" style="border-radius: var(--radius-sm); padding: 0.5rem 1.25rem;">Case Study</a>
-          </div>
-        </div>
-        <div class="project-card reveal" role="listitem" style="padding: 2rem; border-radius: var(--radius-lg); background: var(--surface-color); border: 1px solid var(--border-color); display: flex; flex-direction: column;">
-          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem;">
-            <img src="images/logos/modelopt.svg" alt="ModelOpt Logo" style="width: 48px; height: 48px; border-radius: 12px;">
-            <h3 style="font-size: 1.5rem; color: var(--text-primary); margin: 0; font-weight: 700;">ModelOpt</h3>
-          </div>
-          <p style="color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 1.5rem; line-height: 1.6;">
-            Automated hyperparameter tuning pipeline for deep learning models at scale.
-          </p>
-          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2.5rem;">
-            <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">PyTorch</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Ray Tune</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">MLflow</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">AWS EC2</span>
-          </div>
-          <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center;">
-            <span style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--text-tertiary);"><span style="color: #f59e0b;">●</span> Development</span>
-            <a href="modelopt.html" class="btn btn-primary btn-sm" style="border-radius: var(--radius-sm); padding: 0.5rem 1.25rem;">Case Study</a>
-          </div>
-        </div>
-        <div class="project-card reveal" role="listitem" style="padding: 2rem; border-radius: var(--radius-lg); background: var(--surface-color); border: 1px solid var(--border-color); display: flex; flex-direction: column;">
-          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem;">
-            <img src="images/logos/rag.svg" alt="RAG Knowledge Base Logo" style="width: 48px; height: 48px; border-radius: 12px;">
-            <h3 style="font-size: 1.5rem; color: var(--text-primary); margin: 0; font-weight: 700;">RAG Knowledge Base</h3>
-          </div>
-          <p style="color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 1.5rem; line-height: 1.6;">
-            Retrieval-Augmented Generation system over enterprise documents using vector search.
-          </p>
-          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2.5rem;">
-            <span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">LangChain</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">Pinecone</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">OpenAI API</span><span style="background: var(--surface-color-light); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem;">FastAPI</span>
-          </div>
-          <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center;">
-            <span style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--text-tertiary);"><span style="color: #f59e0b;">●</span> Development</span>
-            <a href="rag.html" class="btn btn-primary btn-sm" style="border-radius: var(--radius-sm); padding: 0.5rem 1.25rem;">Case Study</a>
+          <div class="product-actions">
+            <a href="https://sidekick-sand-eight.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">↗ Launch Application</a>
+            <a href="https://github.com/shanmukha1013/sidekick" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm"><> GitHub Repository</a>
           </div>
         </div>
       </div>
+
+      <!-- AI & ML Projects Section -->
+      <div class="section-header reveal" style="text-align: left; margin-top: 8rem; margin-bottom: 4rem;">
+        <h2 class="section-title" style="margin-bottom: 0.5rem; font-size: 2.5rem;">🧠 AI & Machine Learning <span class="highlight">Projects</span></h2>
+        <p style="font-size: 1.15rem; color: var(--text-secondary); max-width: 600px;">My AI engineering and machine learning infrastructure projects.</p>
+      </div>
+
+      <div class="projects-grid reveal">
+        <!-- Feature Store Pipeline -->
+        <div class="product-card">
+          <div class="product-header">
+            <img src="images/logos/featurestore.svg" alt="Feature Store Pipeline" class="product-logo">
+            <div class="product-title-wrapper">
+              <h3 class="product-title">Feature Store Pipeline</h3>
+              <span class="product-category">Production Feature Store</span>
+            </div>
+            <div class="product-status status-dev"><span class="status-dot">🟡</span> In Development</div>
+          </div>
+          <p class="product-description">
+            A centralized feature management system that stores machine learning features once and serves the same data during both model training and real-time predictions, ensuring consistency and reliability.
+          </p>
+          <div class="product-tech">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">Redis</span>
+            <span class="tech-badge">Kafka</span>
+            <span class="tech-badge">Docker</span>
+          </div>
+          <div class="product-actions">
+            <a href="https://github.com/shanmukha1013" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="flex: 1;"><> GitHub Repository</a>
+          </div>
+        </div>
+
+        <!-- Model Optimization Pipeline -->
+        <div class="product-card">
+          <div class="product-header">
+            <img src="images/logos/modelopt.svg" alt="Model Optimization Pipeline" class="product-logo">
+            <div class="product-title-wrapper">
+              <h3 class="product-title">Model Optimization Pipeline</h3>
+              <span class="product-category">ML Optimization Framework</span>
+            </div>
+            <div class="product-status status-dev"><span class="status-dot">🟡</span> In Development</div>
+          </div>
+          <p class="product-description">
+            Automatically evaluates and optimizes machine learning models using benchmarking, pruning, and quantization to improve inference speed and deployment efficiency.
+          </p>
+          <div class="product-tech">
+            <span class="tech-badge">PyTorch</span>
+            <span class="tech-badge">Ray Tune</span>
+            <span class="tech-badge">MLflow</span>
+            <span class="tech-badge">AWS</span>
+          </div>
+          <div class="product-actions">
+            <a href="https://github.com/shanmukha1013" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="flex: 1;"><> GitHub Repository</a>
+          </div>
+        </div>
+
+        <!-- Production RAG Reliability -->
+        <div class="product-card">
+          <div class="product-header">
+            <img src="images/logos/rag.svg" alt="Production RAG Reliability" class="product-logo">
+            <div class="product-title-wrapper">
+              <h3 class="product-title">Production RAG Reliability</h3>
+              <span class="product-category">Enterprise RAG Evaluation Platform</span>
+            </div>
+            <div class="product-status status-dev"><span class="status-dot">🟡</span> In Development</div>
+          </div>
+          <p class="product-description">
+            Evaluates Retrieval-Augmented Generation systems by measuring retrieval quality, detecting hallucinations, monitoring latency, and improving answer reliability.
+          </p>
+          <div class="product-tech">
+            <span class="tech-badge">LangChain</span>
+            <span class="tech-badge">Pinecone</span>
+            <span class="tech-badge">OpenAI API</span>
+            <span class="tech-badge">FastAPI</span>
+          </div>
+          <div class="product-actions">
+            <a href="https://github.com/shanmukha1013" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="flex: 1;"><> GitHub Repository</a>
+          </div>
+        </div>
+      </div>
+      
     </div>
   </section>
-
 
   <!-- Journey / Timeline Section -->
   <section id="journey" class="section">
